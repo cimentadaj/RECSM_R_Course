@@ -1,0 +1,8 @@
+To-do list:
+
+- Explicación al detalle de que son funciones
+- Como funcionan las funciones y como entenderlas a pesar de no conocerlas (help page) (ejemplos)
+
+- Hacer ejemplos con funciones tipo mean, sd, var y plot.
+- Como instalar paquetes
+- Importar datos? (Pensé que esto estaba en la Clase2)
