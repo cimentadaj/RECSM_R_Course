@@ -1,7 +1,7 @@
 To-do list:
 
--What’s R?
--What’s Studio?
+- Don’t delete this: update dates of the first slide
+
 -Packages
 -How to get help?
 
