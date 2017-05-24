@@ -328,7 +328,7 @@ c(1, FALSE)
 
 Introduction to R objects
 ========================================================
-
+ 
 What do we know so far?
 
 * Numeric vectors
@@ -340,3 +340,8 @@ What do we know so far?
 What's missing?
 
 ### Factors
+
+Introduction to R objects
+========================================================
+
+Factores are something
