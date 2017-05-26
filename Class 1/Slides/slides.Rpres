@@ -344,4 +344,78 @@ What's missing?
 Introduction to R objects
 ========================================================
 
-Factores are something
+Factors are R's way of storing categorical variables
+
+Categories such as:
+
+- 'Male' and 'Female' or 'Married' and 'Divorced'
+- 'Good', 'Middle' and 'High'
+
+```{r}
+gender <- c("Male", "Female", "Male", "Male", "Female")
+
+# Can be turned into
+
+factor(gender)
+```
+
+Introduction to R objects
+========================================================
+
+A factor is just a way of saying that a variable has unique values! And they can be ordered.
+
+```{r}
+elm <- c("Good", "Bad", "Medium")
+(elm_fct <- factor(elm, levels = c("Bad", "Medium", "Good"), ordered = T))
+```
+
+***
+This has consequences
+
+```{r}
+table(elm)
+```
+
+```{r}
+table(elm_fct)
+```
+
+Introduction to R objects
+========================================================
+
+Factors are useful for some specific operations like:
+
+- Changing order of levels for terms in modelling
+- Changing order of axis labels in plots
+- Among other things..
+
+In many cases you can use characters to do what you would want with characters!
+
+Introduction to R objects
+========================================================
+
+Now, have you noticed that we've been assigning names to things?
+
+```{r}
+age
+```
+
+The name `age` holds all these elements inside. How do we know where all the variables we've created are?
+
+```{r}
+ls()
+```
+
+Introduction to R objects
+========================================================
+
+So far, we have a bunch of variables scattered around of workspace. This is usually no the way to go!
+
+### We want to group similar things in the same place!
+
+```{r}
+our_df <- data.frame(name = participants, age = age, gender = gender, age_60 = lgl)
+our_df
+```
+
+A data frame is usually the primary structure of analysis in R
