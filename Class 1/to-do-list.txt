@@ -4,12 +4,3 @@ To-do list:
 
 -Packages
 -How to get help?
-
-
--Explicación de cada objeto. Para esto pensé que lo mejor sería hacer tipo vectores
-que se complementen. Tipo un vector numérico que represente edades, por ejemplo,
-el vector de strings que sea de nombres de la personas, el vector de factores
-que sea tipo su clases social, por ejemplo.
-
--Explicar el data frame como la unificación de todos esos vectores en un data frame
--Explicar las listas con un ejemplo similar

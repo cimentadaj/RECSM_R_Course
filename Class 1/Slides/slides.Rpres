@@ -356,7 +356,7 @@ gender <- c("Male", "Female", "Male", "Male", "Female")
 
 # Can be turned into
 
-factor(gender)
+gender <- factor(gender)
 ```
 
 Introduction to R objects
@@ -419,3 +419,81 @@ our_df
 ```
 
 A data frame is usually the primary structure of analysis in R
+
+Introduction to R objects
+========================================================
+
+It's important that you understand the thing that defines a data frame.
+
+- A data frame has *rows* and *columns*
+- More technically called *dimensions*.
+- Data frames have two dimensions.
+
+```{r}
+dim(our_df)
+nrow(our_df)
+ncol(our_df)
+```
+
+Introduction to R objects
+========================================================
+
+Data frames are very distinctive because they can hold any type of vector.
+
+Matrices can not!
+
+```{r}
+our_matrix <- matrix(1:20, ncol = 4, nrow = 5)
+our_matrix
+```
+
+- Matrices are very similar to data frames
+- They have same number of dimensions
+- You can choose rows/columns in similar ways
+
+Introduction to R objects
+========================================================
+
+Finally, we're missing the secret ingridient the differentiates both matrices and data frames.
+
+# Lists
+
+Introduction to R objects
+========================================================
+
+Think of lists as a bag that can store anything.
+
+```{r}
+our_list <- list(names = participants, gender = gender, age = age)
+our_list
+```
+
+This is a bag that has 3 objects.
+- A charachter
+- A factor
+- A numeric
+
+Introduction to R objects
+========================================================
+
+Think outside the box.. when I say anything, I mean ANYTHING!
+
+```{r}
+complex_list <- list(df = our_df[1:3, ], matrix = our_df[1:3, ], avg_age = mean(age))
+complex_list
+```
+
+Introduction to R objects
+========================================================
+
+Now I'm gonna rock your world..
+
+A data frame is a list (because it can have any class) with a row and column dimensions.
+
+```{r}
+data.frame(our_list)
+```
+
+========================================================
+
+# To be continued....
