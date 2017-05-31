@@ -60,3 +60,82 @@ Their positions are:
 setNames(x, 1:10)
 ```
 
+Subsetting in R
+========================================================
+
+If `x` is:
+```{r, echo = F}
+x
+```
+
+what is the result of:
+```{r, eval = F}
+x[c(1, 3, 8)]
+
+x[c(-1, -5)]
+
+x[seq(1, 8, 2)]
+
+x[NA]
+
+x[]
+```
+
+Write it down without running it!
+
+Subsetting in R
+========================================================
+
+Do these subsetting rules apply the same for all types of vectors?
+```{r}
+char <- letters[1:10]
+lgl <- c(TRUE, FALSE, TRUE, TRUE, TRUE, FALSE, FALSE)
+gender <- factor(sample(c("female", "male"), 10, replace = T))
+```
+
+What about these ones?
+
+```{r, eval = F}
+char[c(1, 1, 1)]
+lgl[c(TRUE, 5, 1)]
+gender[c(1:3, TRUE)]
+```
+
+Super test:
+```{r, eval = F}
+super_vector <- c(char, gender, lgl)
+super_vector[c(1, 11, 27)]
+```
+
+Subsetting in R
+========================================================
+
+Subsetting rules are the same for all types of vectors.
+
+Exceptions are:
+
+* matrices
+* data fraes
+* lists
+
+Let's go through each one...
+
+Subsetting in R
+========================================================
+
+If you remember correctly, matrices is a a vector with rows rows and columns.
+
+```{r}
+x_matrix <- matrix(1:10, 5, 2) # 5 rows and 2 columns
+x_matrix
+```
+
+Building on the previous examples, what is the result of:
+```{r, eval = F}
+x_matrix[c(1, 4, 6)]
+```
+
+To confuse you even more, what's the result of:
+```{r, eval = F}
+x_matrix[2:3, ]
+```
