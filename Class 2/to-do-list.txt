@@ -1,8 +1,5 @@
 To-do list:
 
-- Diferencia entre objetos y funciones
-- Hacer lo de arriba con ejemplos de funciones de importar datos
-
 - Manipulación de reglas de subset:
 * vectores
 * factores (que es diferente)
@@ -13,3 +10,6 @@ To-do list:
 - Subset data frames
 - Crear variables en data frame y matrices
 - Subsetting matrices y data frames with logical vectors
+
+- Diferencia entre objetos y funciones
+- Hacer lo de arriba con ejemplos de funciones de importar datos
