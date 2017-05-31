@@ -4,3 +4,4 @@ To-do list:
 
 -Packages
 -How to get help?
+- Create a copy of “Exercises.R” and remove all answers
