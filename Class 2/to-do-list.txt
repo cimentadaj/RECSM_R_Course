@@ -1,14 +1,6 @@
 To-do list:
 
-- Manipulación de reglas de subset:
-* vectores
-* factores (que es diferente)
-* matrices
-* listas
-* data frames
 
-- Subset data frames
-- Crear variables en data frame y matrices
 - Subsetting matrices y data frames with logical vectors
 
 - Diferencia entre objetos y funciones
