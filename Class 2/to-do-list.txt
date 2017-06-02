@@ -3,3 +3,5 @@ To-do list:
 * Yo hice los ejemplos con la función sd() pero podemos cambiarlo a hacer los ejemplos
 con el comentario de abajo de esto
 - Hacer lo de arriba con ejemplos de funciones de importar datos
+
+- Crear un nuevo exercise file quitando las respuestas del archivo
