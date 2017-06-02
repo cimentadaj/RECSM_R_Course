@@ -494,6 +494,110 @@ gender[c(FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE)]
 Levels: female male
 ```
 
+But that's too long.
+
+Functions in R
+========================================================
+
+Let's move on to functions.
+
+What are functions?
+
+* Objects
+* Commands
+* Black boxes
+
+All at the same time!
+
+Functions in R
+========================================================
+
+For example, take the `sd` function (standard deviation).
 
 
- 
+```r
+class(x)
+```
+
+```
+[1] "integer"
+```
+
+```r
+class(sd)
+```
+
+```
+[1] "function"
+```
+
+* They're both of different classes
+* What happens if you print them?
+
+Functions in R
+========================================================
+
+
+```r
+x
+```
+
+```
+ [1] 10  2  9  4  5  8  3  1  7  6
+```
+
+```r
+sd
+```
+
+```
+function (x, na.rm = FALSE) 
+sqrt(var(if (is.vector(x) || is.factor(x)) x else as.double(x), 
+    na.rm = na.rm))
+<bytecode: 0x7fa0d8bccf58>
+<environment: namespace:stats>
+```
+
+* For the vector we get its contents
+* For the function we get it's source code
+
+Functions in R
+========================================================
+
+* Functions are commands that accept something and return something
+
+
+```r
+sd(x)
+```
+
+returns the standard deviation of a variable
+
+When you have questions about a function type `?function_name`
+
+Functions in R
+========================================================
+incremental: true
+
+
+```r
+x <- rnorm(100)
+y <- x + rnorm(100, mean = 1, sd = 1)
+```
+
+* Check what `?rnorm` does.
+* Use `?cor` to calculate the correlation between x and y
+* Set the `method` argument to be "spearman"
+
+
+```r
+cor(x, y, method = "spearman")
+```
+
+```
+[1] 0.73967
+```
+
+
+========================================================
+# To be continued....
