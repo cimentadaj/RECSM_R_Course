@@ -1,0 +1,172 @@
+<style>
+bold {font-weight: bold; }
+
+.section .reveal .state-background {
+    background: white;
+}
+
+.section .reveal p {
+   color: black;
+   text-align:center;
+   font-size: 1.8em;
+}
+
+.section .reveal h1,
+.section .reveal h2 {
+    color: black;
+    text-align:center;
+    width:100%;
+}
+
+
+</style>
+
+An introduction to R
+========================================================
+author: Jorge Cimentada and Basilio Moreno
+date:  23rd of June of 2017
+class: section
+font-family: 'Helvetica'
+width: 1800
+height: 900
+
+<!-- Arreglar que las imagenes que se vean -->
+<div align="left">
+<img src="./figures/rlogo.png" width=500 height=350>
+</div>
+
+<div align="right">
+<img src="./figures/rstudiologo.png" width=500 height=350>
+</div>
+
+An introduction to functions
+========================================================
+
+Functions are R's black box...
+
+```{r}
+mean(iris$Sepal.Length)
+```
+
+Functions are just like other 'commands' in Stata, SPSS or SAS.
+
+```{r, eval = F}
+SPSS: mean()
+Stata: mean; egen mean
+SAS: MEAN
+```
+
+An introduction to functions
+========================================================
+
+- R has evolved so fast that there thousands of functions.
+- Around 250,000 to be more exact! 190 times more than SAS.
+
+- We don't have enough time to cover functions, for that, see [here](http://adv-r.had.co.nz/Functions.html)
+- Today we'll cover the basics! Let's start
+
+An introduction to functions
+========================================================
+incremental: true
+
+Can anyone tell me what does the mean() function do?
+
+- 
+<div align="left">
+<img src="./figures/mean_formula.png" width=500 height=350>
+</div>
+
+- `sum()` all numbers and divide by the total `length()` of the vector.
+- Create a vector from 1:100 and do it yourself!
+
+An introduction to functions
+========================================================
+
+```{r}
+mean_vector <- 1:100
+sum(mean_vector)/length(mean_vector)
+```
+
+How can we turn this into a function?
+
+```{r}
+our_mean <- function(x) {
+  sum(x)/length(x)
+}
+
+our_mean(mean_vector)
+mean(mean_vector)
+```
+
+An introduction to functions
+========================================================
+Great job!
+
+```{r, eval = F}
+our_mean <- function(x) {
+  sum(x)/length(x)
+}
+```
+
+- `our_mean` is the name of our function
+- `x` is the only argument (but there can be more!)
+- Everything inside `{}` is the code to execute, more formally, the body.
+
+An introduction to functions
+========================================================
+incremental: true
+
+.1 Create a function called `adder`
+
+.2 It accepts two arguments called `x` and `y`
+
+.3 Inside the body, add `y` and `x` and don't give it a name
+
+```{r}
+adder <- function(x, y) {
+  y + x
+}
+```
+
+- Generally speaking, what does this function do?
+
+An introduction to functions
+========================================================
+
+Functions can have many arguments or options.
+
+For example..
+```{r, eval = F}
+url <- "https://gist.githubusercontent.com/seankross/a412dfbd88b3db70b74b/raw/5f23f993cd87c283ce766e7ac6b329ee7cc2e1d1/mtcars.csv"
+mtcars <- read.csv(file = url, sep = ",", header = TRUE, row.names = 1)
+```
+
+Answer this:
+- What's the function name?
+- What do each of these arguments do?
+
+An introduction to functions
+========================================================
+
+When you don't know what a function or it arguments do, search it's help page.
+
+- `?read.csv`
+
+Things to consider:
+
+- Read argument definitions
+- Checkout the examples
+- Run them right away!
+
+
+An introduction to functions
+========================================================
+- `?mean`
+- `?sd`
+
+Wit this vector
+```{r}
+vec <- sample(c(1:100, NA), 1000, replace = T)
+```
+
+- Calculate the `mean` and `sd` (standard deviation)

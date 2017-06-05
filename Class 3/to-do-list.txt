@@ -1,8 +1,8 @@
 To-do list:
 
-- Explicación al detalle de que son funciones
-- Como funcionan las funciones y como entenderlas a pesar de no conocerlas (help page) (ejemplos)
+- Explicar que todo en R son funciones, y todo tiene un help page
+- Más ejemplos de funcions que no conocen (plot) para que lean el help page
+- Como crear funciones más complejas (con varios argumentos y que hagan algún calculo util)
 
-- Hacer ejemplos con funciones tipo mean, sd, var y plot.
 - Como instalar paquetes
 - Importar datos? (Pensé que esto estaba en la Clase2)
