@@ -133,7 +133,116 @@ adder <- function(x, y) {
 An introduction to functions
 ========================================================
 
-Functions can have many arguments or options.
+You often create function to avoid repeating code.
+
+Example:
+
+```{r}
+mtcars_two <- mtcars
+
+mtcars_two$cyl <- as.character(mtcars$cyl)
+mtcars_two$vs <- as.character(mtcars$vs)
+mtcars_two$am <- as.character(mtcars$am)
+mtcars_two$gear <- as.character(mtcars$gear)
+mtcars_two$carb <- as.character(mtcars$carb)
+```
+
+Transforming, eh? Typical.
+
+- Which things change in this code?
+
+An introduction to functions
+========================================================
+incremental: true
+
+- Write a function called 'to_character'
+- It accepts two arguments, `old_var` and `new_var`
+- The function should contain an expression where you turn a variable into character and save it a new name
+- In short, similar to the code from above
+
+An introduction to functions
+========================================================
+incremental: true
+First we start with the code that works
+
+```{r, eval = F}
+old_var <- "cyl"
+new_var <- "cyl"
+
+as.character(mtcars$old_var)
+```
+Does this work?
+
+
+```{r, eval = F}
+as.character(mtcars[, old_var])
+```
+
+Now we have to assign the new name.
+
+```{r, eval = F}
+mtcars$new_var <- as.character(mtcars[, old_var])
+```
+
+Does this work?
+
+```{r, eval = F}
+mtcars[new_var] <- as.character(mtcars[, old_var])
+```
+
+An introduction to functions
+========================================================
+incremental: true
+
+Okay, so we got this working...
+```{r}
+old_var <- "cyl"
+new_var <- "cyl"
+
+mtcars[new_var] <- as.character(mtcars[, old_var])
+```
+
+Wrap it in a function!
+
+```{r}
+to_character <- function(old_var, new_var) {
+  mtcars[new_var] <- as.character(mtcars[, old_var])
+  mtcars
+}
+```
+
+```{r}
+our_mtcars <- to_character(new_var = "cyl", old_var = "cyl") # why did this order change?
+class(our_mtcars$cyl)
+```
+
+An introduction to functions
+========================================================
+incremental: true
+
+All good and well but this only works for the mtcars dataset!
+
+- Add a new argument `df` to the `to_character` function
+- Replace `mtcars` with `df` inside the function
+
+```{r}
+to_character <- function(df, old_var, new_var) {
+  df[new_var] <- as.character(df[, old_var])
+  df
+}
+```
+
+Let's try it with the `iris` data! Check `head(iris)`
+
+```{r}
+our_iris <- to_character(iris, "Species", "Species") # why didn't I name the arguments?
+class(our_iris$Species)
+```
+
+An introduction to functions
+========================================================
+
+Just as in our own function, functions can have many many arguments or options.
 
 For example..
 ```{r, eval = F}
@@ -164,9 +273,46 @@ An introduction to functions
 - `?mean`
 - `?sd`
 
-Wit this vector
+With this vector
 ```{r}
 vec <- sample(c(1:100, NA), 1000, replace = T)
 ```
 
 - Calculate the `mean` and `sd` (standard deviation)
+
+An introduction to functions
+========================================================
+
+In R everything is a function, which means that you should learn how to understand functions.
+
+```{r}
+x <- table(sample(1:5, 100, replace = T))
+```
+
+Using ?barplot and barplot(), reproduce the plot from below exactly.
+
+- Read carefuly over each argument
+- First run `barplot(x)` to see what you're missing
+
+```{r, echo = F}
+barplot(x, names.arg = paste0("cat-", 1:5), xlab = "Categories", ylab = "Frequencies")
+```
+
+An introduction to functions
+========================================================
+
+Take it a bit further and create a plot like this..
+
+```{r}
+x <- rnorm(100)
+y <- x + rnorm(100, sd = 2)
+
+```
+
+```{r, echo = F}
+plot(x, y, main = "My title", xlab = "X label", ylab = "Y label", col = "blue", las = 3)
+```
+
+This will require to read ?plot in detail! That's the whole point of understanding functions.
+
+Start simple by `plot(x, y)`!
