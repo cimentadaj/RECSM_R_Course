@@ -1,6 +1,3 @@
 To-do list:
 
-- Hablar un poco más sobre los help file y como entenderlos
-- HAcer algunos ejemplos de un help page para que vayan al grano de como utilizar la función
 - Como instalar paquetes
-- HAcer algunos ejemplos de funciones de paquetes

@@ -358,3 +358,83 @@ y <- x + rnorm(100, sd = 2)
 This will require to read ?plot in detail! That's the whole point of understanding functions.
 
 Start simple by `plot(x, y)`!
+
+An introduction to functions
+========================================================
+
+Help files have several sections you need to be aware of.
+
+- Description *
+- Usage *
+- Arguments *
+- Details
+- Value *
+- Note
+- References
+- See also
+- Examples *
+
+An introduction to functions
+========================================================
+
+For example.. let's create a data frame.
+
+
+```r
+?data.frame
+```
+
+How many arguments have I used?
+
+```r
+data.frame(num = 1:10, char = letters[1:10], sample(c(T, F), 10, replace = T))
+```
+
+What changed?
+
+```r
+data.frame(num = 1:10, char = letters[1:10], sample(c(T, F), 10, replace = T),
+           row.names = 1, check.rows = TRUE, fix.empty.names = FALSE)
+```
+
+An introduction to functions
+========================================================
+
+In the RECSM seminars you'll be using some advanced R which is why we need to take you to the limit!
+
+* Run one example with the `lm` function and the `mtcars` dataset.
+* Use `by` to split `mtcars` by the factor `cyl` and apply the `summary` function
+* Create a new variable in `mtcars` called `mpg_mean` using `ifelse`. It gives back a 1 when mpg
+is above or equal to the mean and 0 when it's not.
+
+Remember to use `?function`
+
+
+```r
+lm(mpg ~ vs + cyl, data = mtcars)
+by(mtcars, mtcars$cyl, summary)
+mtcars$mpg_mean <- ifelse(mtcars$mpg >= mean(mtcars$mpg), 1, 0)
+```
+
+An introduction to functions
+========================================================
+incremental: true
+Packages are one of the most important things in R.
+
+- They allow people to share ideas/code
+- They are well documented
+- They can contain functions or datasets
+
+Where are R packages? In something called `CRAN` (Comprehensive R Archive Network)
+
+How do you install them?
+
+
+
+
+
+
+```
+Error in contrib.url(repos, "source") : 
+  trying to use CRAN without setting a mirror
+```
