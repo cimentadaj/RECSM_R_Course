@@ -73,3 +73,4 @@ cbind(matrix_letters, matrix_numbers) # answer
 
 # That's why we use data frames!
 # Copy the code from above and replace cbind() by data.frame()
+data.frame(matrix_letters, matrix_numbers) # answer
