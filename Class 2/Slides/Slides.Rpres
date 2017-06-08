@@ -261,12 +261,20 @@ Subsetting in R
 <img src="./figures/pepper1.png" width=500 height=450>
 </div>
 
+```{r, eval = F}
+ourlist
+```
+
 Subsetting in R
 ========================================================
 
 <div align="center">
 <img src="./figures/pepper2.png" width=500 height=450>
 </div>
+
+```{r, eval = F}
+ourlist[1]
+```
 
 Subsetting in R
 ========================================================
@@ -275,12 +283,21 @@ Subsetting in R
 <img src="./figures/pepper3.png" width=500 height=450>
 </div>
 
+```{r, eval = F}
+ourlist[[1]]
+```
+
+
 Subsetting in R
 ========================================================
 
 <div align="center">
 <img src="./figures/pepper4.png" width=500 height=450>
 </div>
+
+```{r, eval = F}
+ourlist[[1]][[1]]
+```
 
 ========================================================
 
