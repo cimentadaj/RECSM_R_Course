@@ -29,14 +29,9 @@ class: section
 font-family: 'Helvetica'
 width: 1800
 height: 900
-
-<!-- Arreglar que las imagenes que se vean -->
-<div align="left">
-<img src="./figures/rlogo.png" width=500 height=350>
-</div>
-
-<div align="right">
-<img src="./figures/rstudiologo.png" width=500 height=350>
+ 
+<div align="center">
+<img src="./figures/rlogo.png" width=500 height=450>
 </div>
 
 How to install R?
@@ -77,20 +72,20 @@ Rstudio is just a nice software to run R!
 <!-- Arreglar las imagenes -->
 
 <div align="center">
-<img src="./figures/rstudio_presentation.png" width=500 height=350>
+<img src="./figures/rstudio_presentation.png" width=1000 height=750>
 </div>
 
 ***
 
 <div align="center">
-<img src="./figures/r_presentation.png" width=500 height=350>
+<img src="./figures/r_presentation.png" width=1000 height=750>
 </div>
 
 And so.. what is Rstudio?
 ========================================================
 
 <div align="center">
-<img src="./figures/rstudio_workflow.png" width=500 height=350>
+<img src="./figures/rstudio_workflow.png" width=1000 height=750>
 </div>
 
 Let's get to it then!
@@ -148,26 +143,8 @@ For example:
 
 ```r
 is.numeric(10)
-```
-
-```
-[1] TRUE
-```
-
-```r
 is.numeric(10 + 20)
-```
-
-```
-[1] TRUE
-```
-
-```r
 is.numeric(10 / 2)
-```
-
-```
-[1] TRUE
 ```
 
 Introduction to R objects

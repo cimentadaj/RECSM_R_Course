@@ -30,13 +30,8 @@ font-family: 'Helvetica'
 width: 1800
 height: 900
 
-<!-- Arreglar que las imagenes que se vean -->
-<div align="left">
-<img src="./figures/rlogo.png" width=500 height=350>
-</div>
-
-<div align="right">
-<img src="./figures/rstudiologo.png" width=500 height=350>
+<div align="center">
+<img src="./figures/rlogo.png" width=500 height=450>
 </div>
 
 Subsetting in R
@@ -554,7 +549,7 @@ sd
 function (x, na.rm = FALSE) 
 sqrt(var(if (is.vector(x) || is.factor(x)) x else as.double(x), 
     na.rm = na.rm))
-<bytecode: 0x7fa0d8bccf58>
+<bytecode: 0x7f9ad4403e40>
 <environment: namespace:stats>
 ```
 

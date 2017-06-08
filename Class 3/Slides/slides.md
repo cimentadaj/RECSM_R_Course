@@ -30,13 +30,8 @@ font-family: 'Helvetica'
 width: 1800
 height: 900
 
-<!-- Arreglar que las imagenes que se vean -->
-<div align="left">
-<img src="./figures/rlogo.png" width=500 height=350>
-</div>
-
-<div align="right">
-<img src="./figures/rstudiologo.png" width=500 height=350>
+<div align="center">
+<img src="./figures/rlogo.png" width=500 height=450>
 </div>
 
 An introduction to functions
@@ -77,7 +72,7 @@ incremental: true
 
 Can anyone tell me what does the mean() function do?
 
-- 
+
 <div align="left">
 <img src="./figures/mean_formula.png" width=500 height=350>
 </div>
@@ -430,11 +425,25 @@ Where are R packages? In something called `CRAN` (Comprehensive R Archive Networ
 How do you install them?
 
 
-
-
-
-
+```r
+install.packages("cowsay")
+install.packages("lme4")
 ```
-Error in contrib.url(repos, "source") : 
-  trying to use CRAN without setting a mirror
+
+An introduction to functions
+========================================================
+
+How do you use them?
+
+
+```r
+?cowsay::say
+?lme4::nlmer
 ```
+
+Read a bit, and then go straight to the examples!
+
+An introduction to functions
+========================================================
+
+I think you're ready for some real R programming...
