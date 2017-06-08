@@ -2,7 +2,7 @@
 # Author: Jorge Cimentada & Basilio Moreno
 # Time: Fri Jun  2 07:50:13 2017
 # Project: RECSM Second Exercises
-###############
+###############  
 
 income <- sample(200:5000, 1000)
 
