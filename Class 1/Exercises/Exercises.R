@@ -4,6 +4,7 @@
 # Project: Exercises Class_1
 ###############
 
+
 # Create a numeric vector from 1 to 10 and call it first_ten
 first_ten <- 1:10 # answer
 

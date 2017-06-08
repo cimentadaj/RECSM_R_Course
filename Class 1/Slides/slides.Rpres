@@ -17,6 +17,8 @@ bold {font-weight: bold; }
     text-align:center;
     width:100%;
 }
+
+
 </style>
 
 An introduction to R
@@ -29,15 +31,17 @@ width: 1800
 height: 900
 
 <!-- Arreglar que las imagenes que se vean -->
-<div align="center">
-<img src="./figures/rlogo.png" width=500 height=450>
+<div align="left">
+<img src="./figures/rlogo.png" width=500 height=350>
+</div>
+
+<div align="right">
+<img src="./figures/rstudiologo.png" width=500 height=350>
 </div>
 
 How to install R?
 ========================================================
-```{r}
-getwd()
-``` 
+
 Luckily, you guys have R and Rstudio installed, so you don't have to worry about this!
 
 But if you want to install it at home, please follow [this guide](https://github.com/cimentadaj/Rseminars/blob/master/RonR_Second_Seminar/README.md)
@@ -73,20 +77,20 @@ Rstudio is just a nice software to run R!
 <!-- Arreglar las imagenes -->
 
 <div align="center">
-<img src="./figures/rstudio_presentation.png" width=700 height=950>
+<img src="./figures/rstudio_presentation.png" width=500 height=350>
 </div>
 
 ***
 
 <div align="center">
-<img src="./figures/r_presentation.png" width=700 height=950>
+<img src="./figures/r_presentation.png" width=500 height=350>
 </div>
 
 And so.. what is Rstudio?
 ========================================================
 
 <div align="center">
-<img src="./figures/rstudio_workflow.png" width=1000 height=650>
+<img src="./figures/rstudio_workflow.png" width=500 height=350>
 </div>
 
 Let's get to it then!
@@ -131,7 +135,7 @@ Introduction to R objects
 Numbers in R are called `numerics`.
 
 For example:
-```{r, eval = F}
+```{r}
 is.numeric(10)
 is.numeric(10 + 20)
 is.numeric(10 / 2)
