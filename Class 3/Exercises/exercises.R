@@ -22,23 +22,42 @@ x <- 1:10
 # sum() everything up
 # divide by the length(x) - 1
 
-our_var <- function(x) {
+our_var <- function(x) { # answer
   sum((x - mean(x))^2)/(length(x) - 1)
 }
 
 # Now create the standard deviation function. Call it our_sd() and simply take the sqrt() of our_var().
 
-our_sd <- function(x) {
+our_sd <- function(x) { # answer
   sqrt(our_var(x))
 }
 
+# Last test. Understand what this code is doing.
+# Use ?`for` or ?`if` if needed.
 
-# Search for a package and install a function and see what it does
-# Write small code with a problem and let them fix it.
-# * They should look into the documentation
-# * They shouldn't know the functions
-# The problem could be that:
-# First, they don't know a new function (like for() or sapply())
-# Calculating the log() of a character when looping through a number of vectors
+for (column in mtcars) {
+  
+  if (is.numeric(column)) {
+    print(mean(column))
+  } else {
+    message("Not numeric")
+  }
+  
+}
 
-sapply(iris, log)
+# Turn the above code to work for the 'iris' dataset. 
+
+# Things to do:
+# Change dataset to iris
+# if the column was not a numeric, print() a table() with
+# the column inside
+
+for (column in iris) { # answer
+  
+  if (is.numeric(column)) {
+    print(mean(column))
+  } else {
+    print(table(column))
+  }
+  
+}
