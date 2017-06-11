@@ -440,7 +440,7 @@ A factor is just a way of saying that a variable has unique values! And they can
 
 ```r
 elm <- c("Good", "Bad", "Medium")
-(elm_fct <- factor(elm, levels = c("Bad", "Medium", "Good"), ordered = T))
+(elm_factor <- factor(elm, levels = c("Bad", "Medium", "Good"), ordered = T))
 ```
 
 ```
@@ -464,11 +464,11 @@ elm
 
 
 ```r
-table(elm_fct)
+table(elm_factor)
 ```
 
 ```
-elm_fct
+elm_factor
    Bad Medium   Good 
      1      1      1 
 ```
@@ -482,7 +482,7 @@ Factors are useful for some specific operations like:
 - Changing order of axis labels in plots
 - Among other things..
 
-In many cases you can use characters to do what you would want with characters!
+In many cases you can use characters to do what you would want with factors!
 
 Introduction to R objects
 ========================================================
@@ -500,22 +500,23 @@ age
 
 The name `age` holds all these elements inside. How do we know where all the variables we've created are?
 
+Let's ask R what objects can be listed from our workspace or environment.
 
 ```r
 ls()
 ```
 
 ```
-[1] "age"          "elm"          "elm_fct"      "gender"      
+[1] "age"          "elm"          "elm_factor"   "gender"      
 [5] "lgl"          "participants"
 ```
 
 Introduction to R objects
 ========================================================
 
-So far, we have a bunch of variables scattered around of workspace. This is usually no the way to go!
+So far, we have a bunch of variables scattered around our workspace. This is usually no the way to go!
 
-### We want to group similar things in the same place!
+### We want to group similar things in the same place.
 
 
 ```r
@@ -539,8 +540,7 @@ Introduction to R objects
 
 It's important that you understand the thing that defines a data frame.
 
-- A data frame has *rows* and *columns*
-- More technically called *dimensions*.
+- A data frame has *rows* and *columns*, more technically called *dimensions*.
 - Data frames have two dimensions.
 
 
@@ -573,7 +573,7 @@ Introduction to R objects
 
 Data frames are very distinctive because they can hold any type of vector.
 
-Matrices can not!
+Matrices cannot!
 
 
 ```r
@@ -590,9 +590,9 @@ our_matrix
 [5,]    5   10   15   20
 ```
 
-- Matrices are very similar to data frames
-- They have same number of dimensions
-- You can choose rows/columns in similar ways
+- Matrices are very similar to data frames.
+- They have same number of dimensions.
+- You can choose rows/columns in similar ways.
 
 Introduction to R objects
 ========================================================
@@ -632,7 +632,7 @@ This is a bag that has 3 objects.
 Introduction to R objects
 ========================================================
 
-Think outside the box.. when I say anything, I mean ANYTHING!
+Think outside the box... when I say anything, I mean ANYTHING!
 
 
 ```r
@@ -660,7 +660,15 @@ $avg_age
 Introduction to R objects
 ========================================================
 
-Now I'm gonna rock your world..
+To sum up, these are the 4 types of data structures available in R.
+<div align="center">
+<img src="./figures/r_data_structures.png">
+</div>
+
+Introduction to R objects
+========================================================
+
+Now I'm gonna rock your world...
 
 A data frame is a list (because it can have any class) with a row and column dimensions.
 
