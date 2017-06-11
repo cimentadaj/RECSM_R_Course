@@ -45,7 +45,7 @@ That guide can help you install
 
 * R
 * Rstudio
-* And `swirl`, a package in which you will do a bunch of exercises as homework!
+* And `swirl`, a package in which you could do a bunch of exercises as homework!
 
 What is R?
 ========================================================
@@ -94,7 +94,9 @@ Let's get to it then!
 R is an interactive language. That means that if you type a number, you will get a number.
 
 
+
 ```r
+#Input
 10
 ```
 
@@ -104,6 +106,7 @@ R is an interactive language. That means that if you type a number, you will get
 
 
 ```r
+#Input
 5
 ```
 
@@ -114,7 +117,7 @@ R is an interactive language. That means that if you type a number, you will get
 Introduction to R objects
 ========================================================
 
-R is also a calculator!
+R is also a calculator
 
 Try typing these operations in R:
 
@@ -123,6 +126,7 @@ Try typing these operations in R:
 * `10 * 5`
 * `20 / 10`
 * `(10 * 20) - 5 / 2 + 2`
+* `2 ^ 3`
 
 Before we continue, what type of operations are these?
 
@@ -136,6 +140,7 @@ Introduction to R objects
 * Multiplication
 * Division
 * A combination of all
+* Exponentiation
 
 Numbers in R are called `numerics`.
 
@@ -239,7 +244,7 @@ Can we do operations with strings?
 ```
 
 ```
-Error in "Paul" + "Maria": non-numeric argument to binary operator
+Error in "Paul" + "Maria": argumento no-numérico para operador binario
 ```
 
 Makes sense.. we can't add any letters.

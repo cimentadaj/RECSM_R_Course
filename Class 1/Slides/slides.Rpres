@@ -45,7 +45,7 @@ That guide can help you install
 
 * R
 * Rstudio
-* And `swirl`, a package in which you will do a bunch of exercises as homework!
+* And `swirl`, a package in which you could do a bunch of exercises as homework!
 
 What is R?
 ========================================================
@@ -93,18 +93,21 @@ Let's get to it then!
 
 R is an interactive language. That means that if you type a number, you will get a number.
 
-```{r}
+
+```{r Input 1}
+#Input
 10
 ```
 
-```{r}
+```{r Input 2}
+#Input
 5
 ```
 
 Introduction to R objects
 ========================================================
 
-R is also a calculator!
+R is also a calculator
 
 Try typing these operations in R:
 
@@ -113,6 +116,7 @@ Try typing these operations in R:
 * `10 * 5`
 * `20 / 10`
 * `(10 * 20) - 5 / 2 + 2`
+* `2 ^ 3`
 
 Before we continue, what type of operations are these?
 
@@ -126,6 +130,7 @@ Introduction to R objects
 * Multiplication
 * Division
 * A combination of all
+* Exponentiation
 
 Numbers in R are called `numerics`.
 
