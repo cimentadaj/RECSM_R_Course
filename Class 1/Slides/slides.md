@@ -159,7 +159,7 @@ Having single numbers, like 10, is not very useful.
 
 We want something similar to a column of a dataset, like age or income.
 
-We can do that with `c()`, which stands for `cocatenate`.
+We can do that with `c()`, which stands for `concatenate`.
 
 
 ```r
@@ -188,13 +188,13 @@ age <- c(32, 34, 18, 22, 65)
 
 Introduction to R objects
 ========================================================
-We just created our first variable! Typical SAS/Excel/Stata column.
+We just created our first variable! The typical SAS/Excel/Stata column.
 
-In R, these objects are called 'vectors'.
+In R, these objects are called '**vectors**'.
 
 Vectors can have several flavours:
 
-* Numerics (we just saw these)
+* Numerics (we just saw one)
 * Logicals
 * Characters
 * Factors
@@ -208,7 +208,7 @@ Following this guideline, create it yourself.
 
 * Create a character vector with `c()`
 * Include the names Paul, Maria, Andres, Roberto and Alicia inside
-* `wrap` every name in quotes like this "Paul", "Maria", etc...
+* `wrap` every name in quotes like this "Paul", "Maria", etc... This will make R understand that input as characters.
 
 Introduction to R objects
 ========================================================
@@ -312,7 +312,7 @@ age > 20
 Contrary to `character` and `numeric` vectors, `logical` vectors can only have three values:
 * `TRUE`
 * `FALSE`
-* `NA`
+* `NA` (which stands for "Not available".)
 
 Introduction to R objects
 ========================================================
@@ -383,7 +383,7 @@ Introduction to R objects
 ========================================================
 incremental: true
 
-Now that you know that.. what would be class of the vectors:
+Now that you know that.. what would be the class of the following vectors?
 
 
 ```r
@@ -407,7 +407,7 @@ What do we know so far?
 * Character vectors
 * Logical vectors
 * How to assign a name to these vectors
-* Vectors can contain only *one* class
+* Vectors can contain only *one* class of data
 
 What's missing?
 
@@ -416,7 +416,7 @@ What's missing?
 Introduction to R objects
 ========================================================
 
-Factors are R's way of storing categorical variables
+Factors are R's way of storing **categorical variables**.
 
 Categories such as:
 
