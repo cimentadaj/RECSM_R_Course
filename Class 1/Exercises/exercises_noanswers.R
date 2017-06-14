@@ -14,7 +14,7 @@
 seq(1, 10)
 1:10
 
-# Read ?seq and create is a sequence from 1 to 100 every 2 numbers: 1, 3, 5, etc..
+# Read ?seq and create# Print the character vector letters-it is available in R by default so you do not need to create it.# Print the character vector letters-it is available in R by default so you do not need to create it.# Print the character vector letters-it is available in R by default so you do not need to create it.# Print the character vector letters-it is available in R by default so you do not need to create it. a sequence from 1 to 100 every 2 numbers: 1, 3, 5, etc..
 
 # Create another sequence from 5 to -5, in jumps of 2. Hint: something with negative
 
@@ -47,8 +47,8 @@ c(T, T) + c(5, 10) + c(0, 0)
 
 # Create a vector with 10 random letters and call it rand_letters
 
-# Create a matrix of dimension 10 x 1 with the vector first_ten
-# assign name matrix_letters
+# Create a matrix of dimension 10 (rows) x 1 (column) with the vector first_ten
+# Assign name matrix_letters
 
 # Repeat the previous for first_ten vector and call it matrix_numbers
 
