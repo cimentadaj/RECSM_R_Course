@@ -1,11 +1,11 @@
-﻿To-do list:
+To-do list:
 
-- Sacar código de cursos del año pasado (2)
+- Sacar código de cursos del año pasado (2 piezas)
 
-- Sacar solo los que se utilizan los elementos básicos y estropearlo.
+- Sacar solo partes donde se utilizan los elementos básicos y estropearlo.
 
-- Pensar bien la lógica del estropeo y que ellos lo puedan resolver por sí solos
-con lo que le enseñamos en las clases anteriores.
+- Pensar bien la lógica del estropeo y que ellos lo puedan resolver por sí solos con lo que le enseñamos en las clases anteriores.
 
 - Podemos añadir ejercicios que continúen la linea del análisis. 
+
 - Poner en practica todos los conceptos que explicamos.
