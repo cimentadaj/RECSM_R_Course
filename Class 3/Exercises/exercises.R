@@ -32,7 +32,7 @@ our_sd <- function(x) { # answer
   sqrt(our_var(x))
 }
 
-# Last test. Understand what this code is doing.
+# Last test: understanding what this code is doing.
 # Use ?`for` or ?`if` if needed.
 
 for (column in mtcars) {
