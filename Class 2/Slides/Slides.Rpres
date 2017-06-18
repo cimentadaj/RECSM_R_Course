@@ -232,9 +232,9 @@ Subsetting in R
 
 Following the 'list' subsetting rules for data frames:
 
-* Give me the positions of the 3rd, 4th and 9th element of the age variable
-* Should be a numeric vector
-* Should don't have any dimensions
+* Give me the positions of the 3rd, 4th and 9th element of the age variable.
+* It should be a numeric vector.
+* It should have no dimensions.
 
 The result should be:
 ```{r, echo = F}
@@ -244,9 +244,11 @@ our_df$age[c(3, 4, 9)]
 Subsetting in R
 ========================================================
 
-Well, now that we're at it.. how does it work for lists?
+Well, now that we're at it... How does it work for lists?
 
-First pic.
+<div align="center">
+<img src="./figures/pepper1.png" width=500 height=450>
+</div>
 
 ```{r}
 our_list <- list(data = our_df, x_matrix, gnd = gender)
@@ -334,10 +336,10 @@ our_df["our_variable"] <- 11:20
 our_df$our_variable <- seq(1, 20, 2)
 ```
 
-There's one other way of doing it.. think hard about `[]` and the `,` to divide rows and columns
+There's one other way of doing it... Think hard about `[]` and the `,` to divide rows and columns
 
 ```{r}
-our_df[, "our_variable"] <- "this repeat until end"
+our_df[, "our_variable"] <- "this repeats until end"
 ```
 
 Subsetting in R
@@ -346,8 +348,8 @@ incremental: true
 
 Add two variables to the `our_df` data frame from any of the options above.
 
-* A logical vector the states `TRUE` for when age is above or equal to 35
-* An addition of `our_df$age` and `our_df$lgl`
+* A logical vector the states `TRUE` for when age is above or equal to 35.
+* An addition of `our_df$age` and `our_df$lgl`.
 
 Call them whatever you want.
 
@@ -359,11 +361,11 @@ our_df$add <- our_df$age + our_df$lgl
 Subsetting in R
 ========================================================
 
-When whe subset we almost always don't subset like we've been doing
+When whe subset we almost always don't subset like we've been doing.
 
-* We never choose rows 1, 2 and 7, for example
-* Instead, we want things like where gender equals 'Male'
-* Or for people over ages 40
+* We never choose rows 1, 2 and 7, for example.
+* Instead, we want things like where gender equals 'Male'.
+* Or for people over ages 40.
 
 You have all the tools to achieve this, can you tell me how to do this?
 
@@ -383,15 +385,15 @@ Everything set!
 Subsetting in R
 ========================================================
 
-* `age` is not a variable out there!
+* But `age` is not a variable out there in our environment!
 * We have to call variables inside data frame as their first names
 
 ```{r}
 our_df$age < 40
 ```
 
-* Only position `c(2, 4, 7, 8, 10)` comply with the logical statement.
-* We could try only subsetting these numbers
+* Only positions `c(2, 4, 7, 8, 10)` comply with the logical statement.
+* We could try only subsetting these numbers.
 
 Subsetting in R
 ========================================================
@@ -401,7 +403,7 @@ incremental: true
 our_df[c(2, 4, 7, 8, 10), ]
 ```
 
-* This is too problematic! What if we had 2000 rows?
+* However, this is too problematic. What if we had 2,000 rows?
 
 ```{r}
 our_df[our_df$age < 40, ]

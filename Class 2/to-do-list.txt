@@ -2,4 +2,5 @@ To-do list:
 
 * Yo hice los ejemplos con la función sd() pero podemos cambiarlo a hacer los ejemplos
 con el comentario de abajo de esto
-- Arreglar imágenes que no están agregadas en el medio de los slides
+- Imágenes funcionan bien.
+- Texto de la presentación y los ejercicios revisado.

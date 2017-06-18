@@ -277,9 +277,9 @@ Subsetting in R
 
 Following the 'list' subsetting rules for data frames:
 
-* Give me the positions of the 3rd, 4th and 9th element of the age variable
-* Should be a numeric vector
-* Should don't have any dimensions
+* Give me the positions of the 3rd, 4th and 9th element of the age variable.
+* It should be a numeric vector.
+* It should have no dimensions.
 
 The result should be:
 
@@ -290,9 +290,11 @@ The result should be:
 Subsetting in R
 ========================================================
 
-Well, now that we're at it.. how does it work for lists?
+Well, now that we're at it... How does it work for lists?
 
-First pic.
+<div align="center">
+<img src="./figures/pepper1.png" width=500 height=450>
+</div>
 
 
 ```r
@@ -387,11 +389,11 @@ our_df["our_variable"] <- 11:20
 our_df$our_variable <- seq(1, 20, 2)
 ```
 
-There's one other way of doing it.. think hard about `[]` and the `,` to divide rows and columns
+There's one other way of doing it... Think hard about `[]` and the `,` to divide rows and columns
 
 
 ```r
-our_df[, "our_variable"] <- "this repeat until end"
+our_df[, "our_variable"] <- "this repeats until end"
 ```
 
 Subsetting in R
@@ -400,8 +402,8 @@ incremental: true
 
 Add two variables to the `our_df` data frame from any of the options above.
 
-* A logical vector the states `TRUE` for when age is above or equal to 35
-* An addition of `our_df$age` and `our_df$lgl`
+* A logical vector the states `TRUE` for when age is above or equal to 35.
+* An addition of `our_df$age` and `our_df$lgl`.
 
 Call them whatever you want.
 
@@ -414,11 +416,11 @@ our_df$add <- our_df$age + our_df$lgl
 Subsetting in R
 ========================================================
 
-When whe subset we almost always don't subset like we've been doing
+When whe subset we almost always don't subset like we've been doing.
 
-* We never choose rows 1, 2 and 7, for example
-* Instead, we want things like where gender equals 'Male'
-* Or for people over ages 40
+* We never choose rows 1, 2 and 7, for example.
+* Instead, we want things like where gender equals 'Male'.
+* Or for people over ages 40.
 
 You have all the tools to achieve this, can you tell me how to do this?
 
@@ -439,7 +441,7 @@ Everything set!
 Subsetting in R
 ========================================================
 
-* `age` is not a variable out there!
+* But `age` is not a variable out there in our environment!
 * We have to call variables inside data frame as their first names
 
 
@@ -451,8 +453,8 @@ our_df$age < 40
  [1] FALSE  TRUE FALSE  TRUE FALSE FALSE  TRUE  TRUE FALSE  TRUE
 ```
 
-* Only position `c(2, 4, 7, 8, 10)` comply with the logical statement.
-* We could try only subsetting these numbers
+* Only positions `c(2, 4, 7, 8, 10)` comply with the logical statement.
+* We could try only subsetting these numbers.
 
 Subsetting in R
 ========================================================
@@ -464,15 +466,15 @@ our_df[c(2, 4, 7, 8, 10), ]
 ```
 
 ```
-   letters age   lgl          our_variable lgl_two add
-2        b  31 FALSE this repeat until end   FALSE  31
-4        d  29 FALSE this repeat until end   FALSE  29
-7        g  27 FALSE this repeat until end   FALSE  27
-8        h  28  TRUE this repeat until end   FALSE  29
-10       j  39 FALSE this repeat until end    TRUE  39
+   letters age   lgl           our_variable lgl_two add
+2        b  31 FALSE this repeats until end   FALSE  31
+4        d  29 FALSE this repeats until end   FALSE  29
+7        g  27 FALSE this repeats until end   FALSE  27
+8        h  28  TRUE this repeats until end   FALSE  29
+10       j  39 FALSE this repeats until end    TRUE  39
 ```
 
-* This is too problematic! What if we had 2000 rows?
+* However, this is too problematic. What if we had 2,000 rows?
 
 
 ```r
@@ -480,12 +482,12 @@ our_df[our_df$age < 40, ]
 ```
 
 ```
-   letters age   lgl          our_variable lgl_two add
-2        b  31 FALSE this repeat until end   FALSE  31
-4        d  29 FALSE this repeat until end   FALSE  29
-7        g  27 FALSE this repeat until end   FALSE  27
-8        h  28  TRUE this repeat until end   FALSE  29
-10       j  39 FALSE this repeat until end    TRUE  39
+   letters age   lgl           our_variable lgl_two add
+2        b  31 FALSE this repeats until end   FALSE  31
+4        d  29 FALSE this repeats until end   FALSE  29
+7        g  27 FALSE this repeats until end   FALSE  27
+8        h  28  TRUE this repeats until end   FALSE  29
+10       j  39 FALSE this repeats until end    TRUE  39
 ```
 
 * Much better!
@@ -584,7 +586,7 @@ sd
 function (x, na.rm = FALSE) 
 sqrt(var(if (is.vector(x) || is.factor(x)) x else as.double(x), 
     na.rm = na.rm))
-<bytecode: 0x000000001709e8e8>
+<bytecode: 0x0000000017064a40>
 <environment: namespace:stats>
 ```
 
