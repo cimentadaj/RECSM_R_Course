@@ -38,7 +38,7 @@ Subsetting in R
 ========================================================
 
 
-Alright, we know what are vectors, matrices and data frames.
+Alright, so far we have seen vectors, matrices and data frames.
 
 - What is subsetting?
 - Is it the same for all objects?
@@ -75,7 +75,7 @@ If `x` is:
 what is the result of:
 
 ```r
-x[c(1, 3, 8)]
+x[c(1, 3, 8)] #Watch out for square brackets.
 
 x[c(-1, -5)]
 
@@ -131,7 +131,7 @@ Let's go through each one...
 Subsetting in R
 ========================================================
 incremental: true
-If you remember correctly, matrices is a a vector with rows rows and columns.
+If you remember correctly, matrices are a vector with rows rows and columns.
 
 
 ```r
@@ -148,13 +148,13 @@ x_matrix
 [5,]    5   10
 ```
 
-Building on the previous examples, what is the result of:
+Building on the previous examples, what wouldl be the result of this?
 
 ```r
 x_matrix[c(1, 4, 6)]
 ```
 
-To confuse you even more, what's the result of:
+To confuse you even more, what do you think would be the result of this?
 
 ```r
 x_matrix[2:3, ]
@@ -163,7 +163,7 @@ x_matrix[2:3, ]
 Subsetting in R
 ========================================================
 
-A matrix can be though of two things:
+A matrix can be thought of as two things:
 
 * A numeric vector:
 
@@ -229,8 +229,8 @@ our_df
 10       j  39 FALSE
 ```
 
-* But if we remember correctly we can have different variables in a data frame
-* Data frames are like the combination of lists and matrices
+* But if we remember correctly we can have different variables in a data frame.
+* Data frames are like the combination of lists and matrices.
 * How do we subset these?
 
 Subsetting in R
@@ -257,18 +257,18 @@ Subsetting in R
 
 So far we saw how to subset the same way we subset matrices.
 
-* Data frames are lists remember?
-* They also have similar subsetting rules to lists!
+* Data frames are lists, remember?
+* They also have similar subsetting rules to lists.
 
 
 ```r
-# We lose the data frame dimensions
+# We lose the data frame dimensions using this method.
 our_df[["age"]]
 
-# We get a data frame
+# We get a data frame with this one.
 our_df["age"] 
 
-# We don't get a data frame
+# We don't get a data frame here.
 our_df$age
 ```
 
@@ -304,16 +304,51 @@ Explanation
 Subsetting in R
 ========================================================
 
-Second pic.
+<div align="center">
+<img src="./figures/pepper1.png" width=500 height=450>
+</div>
 
-Explanation
+
+```r
+ourlist
+```
 
 Subsetting in R
 ========================================================
 
-Third pic
+<div align="center">
+<img src="./figures/pepper2.png" width=500 height=450>
+</div>
 
-Explanation
+
+```r
+ourlist[1]
+```
+
+Subsetting in R
+========================================================
+
+<div align="center">
+<img src="./figures/pepper3.png" width=500 height=450>
+</div>
+
+
+```r
+ourlist[[1]]
+```
+
+
+Subsetting in R
+========================================================
+
+<div align="center">
+<img src="./figures/pepper4.png" width=500 height=450>
+</div>
+
+
+```r
+ourlist[[1]][[1]]
+```
 
 ========================================================
 
@@ -549,7 +584,7 @@ sd
 function (x, na.rm = FALSE) 
 sqrt(var(if (is.vector(x) || is.factor(x)) x else as.double(x), 
     na.rm = na.rm))
-<bytecode: 0x7fb0f3392440>
+<bytecode: 0x000000001709e8e8>
 <environment: namespace:stats>
 ```
 
