@@ -1,3 +1,3 @@
 To-do list:
 
-- Como instalar paquetes
+- Como instalar paquetes // Ya está resuelto esto, ¿no?

@@ -38,6 +38,7 @@ An introduction to functions
 ========================================================
 
 Functions are R's black box...
+Take the function `mean` as example.
 
 
 ```r
@@ -60,11 +61,11 @@ SAS: MEAN
 An introduction to functions
 ========================================================
 
-- R has evolved so fast that there thousands of functions.
+- R has evolved so fast that there are thousands of functions.
 - Around 250,000 to be more exact! 190 times more than SAS.
 
-- We don't have enough time to cover functions, for that, see [here](http://adv-r.had.co.nz/Functions.html)
-- Today we'll cover the basics! Let's start
+- We don't have enough time to cover functions, for that, see [here](http://adv-r.had.co.nz/Functions.html).
+- Today we'll cover the basics. Let's start!
 
 An introduction to functions
 ========================================================
@@ -82,6 +83,7 @@ Can anyone tell me what does the mean() function do?
 
 An introduction to functions
 ========================================================
+incremental: true
 
 
 ```r
@@ -129,7 +131,7 @@ our_mean <- function(x) {
 
 - `our_mean` is the name of our function
 - `x` is the only argument (but there can be more!)
-- Everything inside `{}` is the code to execute, more formally, the body.
+- Everything inside `{}` is the code to execute, more formally, the body of the function.
 
 An introduction to functions
 ========================================================
@@ -139,7 +141,7 @@ incremental: true
 
 .2 It accepts two arguments called `x` and `y`
 
-.3 Inside the body, add `y` and `x` and don't give it a name
+.3 Inside the body, add `y` and `x` and don't give with it a name.
 
 
 ```r
@@ -265,7 +267,9 @@ to_character <- function(df, old_var, new_var) {
 }
 ```
 
-Let's try it with the `iris` data! Check `head(iris)`
+Let's try it with the `iris` data! 
+This data frame is already available in the working environment. 
+Check `head(iris)`
 
 
 ```r
@@ -291,12 +295,12 @@ mtcars <- read.csv(file = url, sep = ",", header = TRUE, row.names = 1)
 
 Answer this:
 - What's the function name?
-- What do each of these arguments do?
+- What do each of their arguments do?
 
 An introduction to functions
 ========================================================
 
-When you don't know what a function or it arguments do, search it's help page.
+When you don't know what a function or its arguments do, search for its help page.
 
 - `?read.csv`
 
@@ -352,7 +356,7 @@ y <- x + rnorm(100, sd = 2)
 
 This will require to read ?plot in detail! That's the whole point of understanding functions.
 
-Start simple by `plot(x, y)`!
+Start simple by running `plot(x, y)`!
 
 An introduction to functions
 ========================================================
@@ -372,7 +376,7 @@ Help files have several sections you need to be aware of.
 An introduction to functions
 ========================================================
 
-For example.. let's create a data frame.
+For example, let's create a data frame. This would be the function to use.
 
 
 ```r
@@ -385,7 +389,7 @@ How many arguments have I used?
 data.frame(num = 1:10, char = letters[1:10], sample(c(T, F), 10, replace = T))
 ```
 
-What changed?
+What changed from the example in the _help_ document?
 
 ```r
 data.frame(num = 1:10, char = letters[1:10], sample(c(T, F), 10, replace = T),
@@ -397,10 +401,9 @@ An introduction to functions
 
 In the RECSM seminars you'll be using some advanced R which is why we need to take you to the limit!
 
-* Run one example with the `lm` function and the `mtcars` dataset.
+* Run one example with the `lm` (Fitting linear models) function and the `mtcars` dataset.
 * Use `by` to split `mtcars` by the factor `cyl` and apply the `summary` function
-* Create a new variable in `mtcars` called `mpg_mean` using `ifelse`. It gives back a 1 when mpg
-is above or equal to the mean and 0 when it's not.
+* Create a new variable in `mtcars` called `mpg_mean` using `ifelse`. It gives back a 1 when mpg is above or equal to the mean and 0 when it's not.
 
 Remember to use `?function`
 
@@ -434,6 +437,16 @@ An introduction to functions
 ========================================================
 
 How do you use them?
+ Once installed we will have to call them in order to get them running in the current session.
+
+
+```r
+library("cowsay")
+library("lme4")
+```
+
+
+Here we have some more info provided by the help documents. 
 
 
 ```r
@@ -441,7 +454,7 @@ How do you use them?
 ?lme4::nlmer
 ```
 
-Read a bit, and then go straight to the examples!
+Read a bit, and then check the examples!
 
 An introduction to functions
 ========================================================
