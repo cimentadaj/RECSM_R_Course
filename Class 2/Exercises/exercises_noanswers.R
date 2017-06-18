@@ -4,7 +4,7 @@
 # Project: RECSM Second Exercises
 ###############  
 
-income <- sample(200:5000, 1000)
+# Create a vector of length 1000 from random numbers from 200:5000, call it income.
 
 # Create a new vector (using seq()) that runs from 1000 to 1 (not from 1 to 1000).
 # call it index
@@ -26,13 +26,13 @@ income <- sample(200:5000, 1000)
 
 # Repeat the above for women and calculate the average income. Which one is higher?
 
-# We could put these three variables into a matrix but that wouldn't make a lot of sense!
+# We could put these three variables into a matrix but that wouldn't make a lot of sense.
 # Why?
 
 # Using the data.frame() function, combine the three variables into a data frame
 # in this order: index, income and gender. Call the data frame our_df.
 
-# Use the head() function to take a look at your data.
+# Use the head() function to take a look at the data in our_df.
 
 # Can you subset the first 15 rows from our_df?
 
@@ -40,5 +40,5 @@ income <- sample(200:5000, 1000)
 
 # Using the $, subset the variable income and calculate the mean() of income.
 
-# Last exercise. Give me the rows where index is below 500 and the gender
+# Last exercise. Give me the rows where the value for index is below 500 and the gender
 # variable is equal to female. Hint: logical statement & logical statement
