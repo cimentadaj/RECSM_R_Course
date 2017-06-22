@@ -170,9 +170,9 @@ mtcars_two$gear <- as.character(mtcars$gear)
 mtcars_two$carb <- as.character(mtcars$carb)
 ```
 
-Transforming, eh? Typical.
+A bit tiring, isn't?
 
-- Which things change in this code?
+- Let's focus on which things actually change in this code.
 
 An introduction to functions
 ========================================================
@@ -180,8 +180,8 @@ incremental: true
 
 - Write a function called 'to_character'
 - It accepts two arguments, `old_var` and `new_var`
-- The function should contain an expression where you turn a variable into character and save it a new name
-- In short, similar to the code from above
+- The function should contain an expression where you turn a variable into character and then save that a new name.
+- In short, similar to the code from above.
 
 An introduction to functions
 ========================================================
