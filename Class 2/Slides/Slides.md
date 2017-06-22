@@ -246,7 +246,7 @@ our_df[1:3, ]
 # Only the first and 8th row for first two columns
 our_df[c(1, 8), 1:2]
 
-# The 5th column three times for the third column
+# The 5th row three times for the third column
 our_df[c(5, 5, 5), 3]
 ```
 
