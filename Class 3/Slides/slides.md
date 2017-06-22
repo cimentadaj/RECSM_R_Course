@@ -170,7 +170,7 @@ mtcars_two$gear <- as.character(mtcars$gear)
 mtcars_two$carb <- as.character(mtcars$carb)
 ```
 
-A bit tiring, isn't?
+A bit tiring, isn't it?
 
 - Let's focus on which things actually change in this code.
 
