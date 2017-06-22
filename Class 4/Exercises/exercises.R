@@ -5,8 +5,8 @@
 ###############
 
 # This code is an example from the previous year RECSM summer school.
-# The aim is to put what you just learnt into practive in an environment similar to the one
-# you will find from tomorrow on.
+# The aim is to put what you just learned into practice in an environment similar to the one
+# you will find from tomorrow onwards.
 
 #Where are we?
 getwd()
