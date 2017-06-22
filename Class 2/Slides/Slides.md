@@ -204,7 +204,7 @@ x_matrix[, 1:2]
 Subsetting in R
 ========================================================
 
-Now, data frame are very similar to matrices.
+Now, data frames are very similar to matrices.
 
 
 
