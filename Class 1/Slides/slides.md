@@ -244,7 +244,7 @@ Can we do operations with strings?
 ```
 
 ```
-Error in "Paul" + "Maria": argumento no-numérico para operador binario
+Error in "Paul" + "Maria": non-numeric argument to binary operator
 ```
 
 Makes sense.. we can't add any letters.
