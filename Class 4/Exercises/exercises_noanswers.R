@@ -262,12 +262,13 @@ USArrests			# view the object
 # ------------------------
 # Elementary visualization
 
-# R's graphics workhorse is the "plot" command, with two arguments:
-plot(x=USA$Murder,y=USA$UrbanPop)
+# R's graphics workhorse is the "plot" command. 
+# Use plot() with two arguments: Murder & UrbanPop from the USA data frame.
+
 
 # Adding plot title and clean up axis labels
 # Search for the two dimensions of the plot and name each axis accordingly.
-plot(x=USA$Murder,y=USA$Assault,xlab="Axis name",ylab="Axis name",main="USArrests")
+
 
 # You can also add text to a plot:
 # Step 1: set up a "blank" plot window
@@ -325,11 +326,14 @@ lm(d$X ~ d$y)
 #Automatic way of generating plots for a linear model and its fit.
 plot(my_lm)
 
-#Plotting the two variables involved and the expected values.
-plot(d$X, d$y)
+#Plot the two variables involved...
+
+
+# and you can add the expected values using the abline() functions.
 abline(my_lm)
 
 # Great! You have completed this introduction course to R!
 # There are a lot of resources available to learn more about R.
 # If you have time now, why don't you try to load the package `swirl`
 # that you installed before?
+# It is a package aimed at learning R from R.
