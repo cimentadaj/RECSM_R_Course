@@ -188,7 +188,7 @@ pctg(a) #answer
 
 # We can use functions within  functions too! 
 # It is a pretty common practice when coding in R.
-# Try to print the sum of all the percentage values of a —they should
+# Try to print the sum of all the percentage values of `a` --they should
 # add to 100 if everything worked so far!
 sum(pctg(a)) #answer
 
