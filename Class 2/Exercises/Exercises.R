@@ -4,16 +4,16 @@
 # Project: RECSM Second Exercises
 ###############
 
-# Create a vector of length 1000 from random numbers from 200:5000, call it 
-# income
+# Create a vector of length 1000 from random numbers from 200:5000, call it income.
+# Hint: use the ?sample function.
 income <- sample(200:5000, 1000) # answer
 
 # Create a new vector (using seq()) that runs from 1000 to 1 (not from 1 to 1000).
-# call it index
+# Call it index.
 index <- seq(1000, 1) # answer
 
 # Finally, use the rep() function to repeat the vector c("male", "female")
-# 500 times. Call it gender
+# 500 times. Call it gender.
 gender <- rep(c("male", "female"), 500) # answer
 
 # Let's begin the subsetting!
@@ -28,22 +28,18 @@ income_male <- income[gender == "male"] # answer
 mean(income_male) # answer
 
 # Repeat the above for women and calculate the average income. Which one is higher?
-
 income_female <- income[gender == "female"] # answer
 mean(income_female) # answer
 
 # We could put these three variables into a matrix but that wouldn't make a lot of sense!
 # Why?
-
 Because they have different classes and would be coerced into one single class. # answer
 
 # Using the data.frame() function, combine the three variables into a data frame
 # in this order: index, income and gender. Call the data frame our_df.
-
 our_df <- data.frame(index, income, gender) # answer
 
 # Use the head() function to take a look at your data.
-
 head(our_df) # answer
 
 # Can you subset the first 15 rows from our_df?
@@ -57,6 +53,5 @@ our_df[1:15, 2:3] # answer
 mean(our_df$income)
 
 # Last exercise. Give me the rows where index is below 500 and the gender
-# variable is equal to female. Hint: logical statement & logical statement
-
+# variable is equal to female. Hint: logical statement & logical statement.
 our_df[our_df$index < 500 & our_df$gender == "female", ] # answer
