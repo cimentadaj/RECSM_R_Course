@@ -18,7 +18,7 @@
 # Hint: Capitalisation DOES matter.
 
 
-# Use the square root function (sqrt())  over a
+# Use the square root function (sqrt())  over `a`
 
 # Use the function again and assign the result to object b
 
@@ -85,21 +85,21 @@ which(a>2)	# which indices are TRUE?
 m <- matrix()
 
 # Select an element (specifying two dimensions)
-m[1,2] #answer
+
 
 # just the first row
-m[1,] #answer
+
 
 # just the second column
-m[,2] #answer
+
 
 # Select a submatrix (a matrix within the values of a)
-m[2:3,3:5] #answer
+
 
 m[-2,]		# nice trick: negative numbers omit cells!
 
 # Get rid of row four and column two
-m[-4,-2] #answer
+
 
 # What are the dimensions of that martix?
 dim(m)
@@ -156,7 +156,7 @@ a != b	# corresponding values not equivalent?
 # (Hint:don't forget the colon operator and concatenate.)
 
 
-#Check that your new object is indeed a data.frame
+#Check that your new object is indeed a data.frame.
 
 
 # Print now the vector corresponding to the `foreign` variable
@@ -205,7 +205,7 @@ setwd("my_computer/example/example_path_file")
 # Set the working directory to one level higher in your system.
 # To get the file path, you can get the current working directory as we just learnt to do and
 # then remove the last indicatio (after the last /)
-setwd("my_computer/example/") #answer
+
 
 #What is available here?
 list.files()
