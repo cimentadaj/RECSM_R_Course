@@ -40,7 +40,7 @@ x <- c(seq(1, 100, by = 2), "100")
 # What is the result of this?
 # Write it down, don't run
 c(T, T) + c(5, 10) + c(0, 0)
-1:3 + seq(10, 16, 2) # why is the last reult not 16?
+1:3 + seq(10, 16, 2) # why is the last result not 16?
 1:100 + 1
 
 
