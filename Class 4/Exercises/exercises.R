@@ -214,7 +214,7 @@ setwd("my_computer/example/example_path_file")
 # Set the working directory to one level higher in your system.
 # To get the file path, you can get the current working directory as we just learnt to do and
 # then remove the last indicatio (after the last /)
-
+setwd("my_computer/example/") #answer
 
 #What is available here?
 list.files()
@@ -258,7 +258,7 @@ class(USArrests) #answer
 USA <- USArrests #answer
 
 # How many dimensions does it have?
-dim(USA)
+dim(USA) #answer
 
 # Could you show only the data referred to states with a Urban Population higher than 80(%)?
 USA[USA$UrbanPop > 80, ] #answer
@@ -269,12 +269,14 @@ USA[USA$UrbanPop > mean(USA$UrbanPop), ] #answer
 # ------------------------
 # Elementary visualization
 
-# R's graphics workhorse is the "plot" command, with two arguments:
-plot(x=USA$Murder,y=USA$UrbanPop)
+# R's graphics workhorse is the "plot" command. 
+# Use plot() with two arguments: Murder & UrbanPop from the USA data frame.
+plot(x=USA$Murder,y=USA$UrbanPop) #answer
 
 # Adding plot title and clean up axis labels
 # Search for the two dimensions of the plot and name each axis accordingly.
-plot(x=USA$Murder,y=USA$Assault,xlab="Axis name",ylab="Axis name",main="USArrests")
+# Go back to the help documentation of ?plot to get the instructions!
+plot(x=USA$Murder,y=USA$Assault,xlab="Murder",ylab="Assault",main="USArrests") #answer
 
 # You can also add text to a plot:
 # Step 1: set up a "blank" plot window
@@ -330,16 +332,19 @@ plot(d$X, d$y)
 lm(d$X ~ d$y)
 
 # Can you assign that to an object called my_lm?
-my_lm <- lm(d$X ~ d$y)
+my_lm <- lm(d$X ~ d$y) #answer
 
 #Automatic way of generating plots for a linear model and its fit.
 plot(my_lm)
 
-#Plotting the two variables involved and the expected values.
-plot(d$X, d$y)
+#Plot the two variables involved...
+plot(d$X, d$y) #answer
+
+# and you can add the expected values using the abline() functions.
 abline(my_lm)
 
 # Great! You have completed this introduction course to R!
 # There are a lot of resources available to learn more about R.
-# If you have time now, why don't you try to load the package `swirl`
+# If you have time now, why don't you try to load the package `swirl`.
 # that you installed before?
+# It is a package aimed at learning R from R.
