@@ -106,7 +106,7 @@ dim(m)
 nrow(m)		# how many rows in b?
 ncol(m)		# how many columns in b?
 
-#Here we have a new with 5 numeric elements
+#Here we have a new vector with 5 numeric elements:
 l <- (1:5)
 
 # Since its length equals that of the two dimensions of the matrix m, we can
