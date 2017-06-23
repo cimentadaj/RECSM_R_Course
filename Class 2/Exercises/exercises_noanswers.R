@@ -5,12 +5,13 @@
 ###############  
 
 # Create a vector of length 1000 from random numbers from 200:5000, call it income.
+# Hint: use the ?sample function.
 
 # Create a new vector (using seq()) that runs from 1000 to 1 (not from 1 to 1000).
-# call it index
+# Call it index.
 
 # Finally, use the rep() function to repeat the vector c("male", "female")
-# 500 times. Call it gender
+# 500 times. Call it gender.
 
 
 
@@ -41,4 +42,4 @@
 # Using the $, subset the variable income and calculate the mean() of income.
 
 # Last exercise. Give me the rows where the value for index is below 500 and the gender
-# variable is equal to female. Hint: logical statement & logical statement
+# variable is equal to female. Hint: logical statement & logical statement.
