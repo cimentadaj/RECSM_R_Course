@@ -204,7 +204,7 @@ setwd("my_computer/example/example_path_file")
 
 # Set the working directory to one level higher in your system.
 # To get the file path, you can get the current working directory as we just learnt to do and
-# then remove the last indicatio (after the last /)
+# then remove the last indication (after the last /)
 setwd("my_computer/example/") #answer
 
 #What is available here?
