@@ -4,3 +4,4 @@ Global to-do list del curso:
 - [ ] Update el swirl con el nuevo contenido? (esto quizás es más trabajo pero bueno, tenemos tiempo)
 - [ ] Revisar que todos los links de las instalaciones/referencias de todo funcionen correctamente
 - [ ] Revisar las todo lists del año pasado.
+- [ ] Incorporar contenidos solicitados por otros profesores de la summer school.
