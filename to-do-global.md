@@ -4,7 +4,7 @@
    - [ ] Eliminar la palabra EDA por Explorartory Data Analisis en el curso..
    - [ ] Revisar que los links funcionen correctamente de RonR.
 - [ ] **Update el swirl con el nuevo contenido? (esto quizás es más trabajo pero bueno, tenemos tiempo).**
-- [x] **Revisar que todos los links de las instalaciones/referencias de todo funcionen correctamente.**
+- [x] ~~**Revisar que todos los links de las instalaciones/referencias de todo funcionen correctamente.**~~
 - [ ] **Revisar las todo lists del año pasado.**
    - [x] Class 1.
    - [x] Class 2.
