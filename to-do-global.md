@@ -1,4 +1,4 @@
-Global to-do list del curso:
+# Global to-do list del curso:
 
 - [ ] **Revisar que el swirl course está completo, no tiene faltas y corre correctamente.**
 - [ ] **Update el swirl con el nuevo contenido? (esto quizás es más trabajo pero bueno, tenemos tiempo).**
