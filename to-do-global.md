@@ -14,5 +14,5 @@
    - [x] 3. Help
    - [x] 4. Writing functions
    - [ ] 5. Writing loops (3rd or 4th class)
-   - [ ] 6. Import and write data to/from R
+   - [ ] 6. Import and write data to/from R (Bring slides from: https://github.com/cimentadaj/Rseminars#seminar-3-manipulating-and-processing-data ?)
    - [ ] 7. Running standard models (3rd or 4th class)
