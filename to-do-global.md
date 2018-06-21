@@ -1,10 +1,12 @@
 # Global to-do list del curso:
 
 - [ ] **Revisar que el swirl course está completo, no tiene faltas y corre correctamente.**
+    - [] Eliminar la palabra EDA por Explorartory Data Analisis en el curso.
+    - [] Revisar que los links funcionen correctamente de RonR.
 - [ ] **Update el swirl con el nuevo contenido? (esto quizás es más trabajo pero bueno, tenemos tiempo).**
 - [x] **Revisar que todos los links de las instalaciones/referencias de todo funcionen correctamente.**
 - [ ] **Revisar las todo lists del año pasado.**
-   - [ ] Class 1. Packages and how to get help--those topics are part of the 3rd class. Shall we move them here?
+   - [x] Class 1.
    - [x] Class 2.
    - [ ] Class 3. Introduce the str() function to check the structure of a data frame.
    - [ ] Class 4: Add slides talking about loops and standard models as well.
