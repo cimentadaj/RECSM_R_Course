@@ -1,5 +1,5 @@
 # A subtle introduction to R
-### _These contents are part of the [RECSM Summer School](https://www.upf.edu/web/survey/summer-school-in-survey-methodology-2018) _
+#### _These contents are part of the [RECSM Summer School](https://www.upf.edu/web/survey/summer-school-in-survey-methodology-2018)_
 
 ### Course description
 R is a free programming language designed to apply statistical analysis and produce data visualization. Among its endless capabilities, R is famous among statistical software for its flexibility in creating functions, packages, data visualization, for being open source and for offering a wide range of statistical tools. The aim of this seminar is to introduce you to the R language and give you hands-on experience on how to use it.
