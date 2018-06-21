@@ -5,9 +5,9 @@ Global to-do list del curso:
 - [x] **Revisar que todos los links de las instalaciones/referencias de todo funcionen correctamente.**
 - [ ] **Revisar las todo lists del año pasado.**
 - [ ] _Class 1. Packages and how to get help--those topics are part of the 3rd class. Shall we move them here?_
-- [x] _Class 2. _
-- [ ] _Class 3. introduce the str() function to check the structure of a data frame. _
-- [ ] _Class 4: Add slides talking about loops and standard models as well. _
+- [x] _Class 2._
+- [ ] _Class 3. introduce the str() function to check the structure of a data frame._
+- [ ] _Class 4: Add slides talking about loops and standard models as well._
 - [ ] **Incorporar contenidos solicitados por otros profesores de la summer school:**
 - [x] _1. Data types_
 - [x] _2. Subsetting_
