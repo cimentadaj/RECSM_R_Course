@@ -378,7 +378,6 @@ An introduction to functions
 
 For example, let's create a data frame. This would be the function to use.
 
-
 ```r
 ?data.frame
 ```
@@ -392,9 +391,15 @@ data.frame(num = 1:10, char = letters[1:10], sample(c(T, F), 10, replace = T))
 What changed from the example in the _help_ document?
 
 ```r
-data.frame(num = 1:10, char = letters[1:10], sample(c(T, F), 10, replace = T),
+my_data_frame <- data.frame(num = 1:10, char = letters[1:10], sample(c(T, F), 10, replace = T),
            row.names = 1, check.rows = TRUE, fix.empty.names = FALSE)
 ```
+
+We can finally have a look at the new data frame using the function `str()` which shows the _structure_ of a data frame.
+```r
+str(my_data_frame)
+```
+
 
 An introduction to functions
 ========================================================
