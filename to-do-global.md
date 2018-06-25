@@ -17,4 +17,4 @@
    - [x] 4. Writing functions
    - [x] 5. Writing loops (3rd class) - Add only one slide but will explain in detail on the console
    - [ ] 6. Import and write data to/from R (Bring slides from: https://github.com/cimentadaj/Rseminars#seminar-3-manipulating-and-processing-data ?)
-   - [ ] 7. Running standard models (3rd or 4th class)
+   - [x] 7. Running standard models (4th class)
