@@ -2,7 +2,7 @@
 
 - [ ] **Revisar que el swirl course está completo, no tiene faltas y corre correctamente.**
    - [x] Eliminar la palabra EDA por Explorartory Data Analisis en el curso..
-   - [ ] Revisar que los links funcionen correctamente de RonR - En proceso, haré uno curso cada día
+   - [ ] Revisar que los links funcionen correctamente de RonR - Solo me queda lesson_2 pero hasta ahora todo bien.
 - [ ] **Update el swirl con el nuevo contenido? (extra).**
 - [x] ~~**Revisar que todos los links de las instalaciones/referencias de todo funcionen correctamente.**~~
 - [ ] **Revisar las todo lists del año pasado.**
