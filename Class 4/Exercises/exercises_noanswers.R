@@ -301,7 +301,7 @@ d$X <- rnorm(n = I, mean = 4, sd = 4)
 d$alpha <- 2; d$beta <- 3; sigma <- 5
 
 d$y <- d$alpha + d$beta * d$X + rnorm(I, mean=0, sd=sigma)
-
+  
 head(d, n=12)
 
 # What kind of objects are I and d, just created?
@@ -314,11 +314,16 @@ head(d, n=12)
 
 plot(d$X, d$y)
 
-# Extra ball: the way to fit a liner model in R is the following:
+# Could you fit a liner model using the data frame d, 
+# in which X is the dependent variable and y the independent one?
 lm(d$X ~ d$y)
 
+# As we have seen, the results from a statistical model are stored in a special type of data.
 # Can you assign that to an object called my_lm?
+my_lm <- lm(d$X ~ d$y)
 
+# Try now to plot the residual error from the model (subsetting the object you've just created) in a histogram
+hist(my_lm$residuals)
 
 #Automatic way of generating plots for a linear model and its fit.
 plot(my_lm)
