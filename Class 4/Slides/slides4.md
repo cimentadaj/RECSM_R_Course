@@ -1,3 +1,8 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
 <style>
 bold {font-weight: bold; }
 
@@ -34,7 +39,7 @@ height: 900
 <img src="./figures/rlogo.png" width=500 height=450>
 </div>
 
-An introduction to functions
+Learning more about R functions
 ========================================================
 
 Functions are R's black box...
@@ -48,7 +53,8 @@ mean(iris$Sepal.Length)
 An introduction to functions
 ========================================================
 
-In the RECSM seminars you'll be using some advanced R which is why we need to take you to the limit!
+So far we have taken a glimpse to the linear model formula in a previous example.
+Here we are going to go a bit deeper on the logic behind the **formula interface** used by some R functions.
 
 * Run one example with the `lm` (Fitting linear models) function and the `mtcars` dataset.
 
@@ -63,7 +69,7 @@ mtcars$mpg_mean <- ifelse(mtcars$mpg >= mean(mtcars$mpg), 1, 0)
 The formula interface
 ========================================================
 
-The thing to notice here is that the second vector is a second *optional argument* to the function and, by passing it, the function performs a different routine. Let's take a look at the documentation for `t.test`:
+Let's take a look at the documentation for `t.test`:
 
 ``` r
 ?t.test
@@ -74,7 +80,7 @@ We see that there are two separate *methods* (more about this in a second) for i
 Here we check the difference in mpg recorded by type of transmission (**a**utomatic or **m**anual)
 
 ``` r
-
+#am variable refers to Transmission (0 = automatic, 1 = manual)
 my_test <- t.test(mpg ~ am, data=mtcars)
 my_test
 ```
@@ -266,5 +272,59 @@ class(sample_model)
 
     ## [1] "lm"
 
-In this case, `sample_model` does not contain the confidence interval (why should it?), but `confint` knows where to look for the information it needs in the object. `confint` is therefore a *method*.
+
+
+Data import and export: the basics
+========================================================
+
+Finally, it is sensible to asume we will not be working exclusively with R.
+Most of the time (and because of multiple reasons) we need to work in a multi-platform environment.
+
+How do we import data -like a survey result-  into R? It depends on the format of the data we are interested in. However, most of the functions focused on that goal follow a similar working structure.
+
+The most simple case is `read.table`, a built-in function in R. Take a moment to familiase yourself with its arguments with the following example.
+
+``` r
+read.table(file = "local/path/my_csv_file.csv", sep = ";", dec = ",",
+          row.names = c("row1", "row2"), col.names = c("col1", "col2"))
+```
+
+This function will try to identify data structured in a tabular way. The most likely format for this data to be written in is `.csv`, which stands for **c**omma **s**eparated **v**alues. `.csv` files are the best for compatibility since they can be read straight away in most software solutions. However, that comes at the cost of virtual size and the lack of extra features.
+
+
+Data import and export: the basics
+========================================================
+
+Additionaly, there is another function for writing data out of R.
+The most basic approach is `write.table` which uses the `.csv` format by default:
+
+```r
+write.table(x = matrix(data = 0.61:20, nrow = 2, ncol = 2), file = "my_csv_file.csv",
+          row.names = c("obs_1", "obs_2"), quote = FALSE, sep = ";", dec = ",", na = "")
+
+?write.table
+```
+Here we are modifying some parameters for convenience. Instead of using a simple comma to separate values, the *sep*aration argument is set to ";" because this symbol makes it harder to find false separators in the values, while it makes it a bit easier to read the data when we open the raw file. Similarly: `.tsv` (**t**ab **s**eparated **v**alues).
+
+
+
+Data import and export: reference guide
+========================================================
+
+Despite the vast possibilities of data formats you may find in your work, we have built a starting guide to let you know what are some of the most common solutions in a handful of cases. From a realistic point of view, we encourage you to check with a web search on the specific format you are trying to work with. The reason is that there are countless packages available, and some of them are not finished software and hence their reliability and/or features can change from version to version.
+
+
+| Type of data | Package | Function for import | Function for export |
+|--------------|---------|---------------------|---------------------|
+| Basic (unknown) | Built-in function `{utils}`| `read.table()`        | `write.table()`  |
+| Basic (`.csv`) | Built-in function `{utils}` | `read.csv()`        | `write.csv()`  |
+| Basic (`.tsv`) | Built-in function `{utils}` | `read.csv( ... , sep = "\t")`        | `write.csv(... , sep = "\t")`  |
+| STATA (`.dta`) |  Foreign  | `read.dta()`        | `write.dta()`  |
+|                |  Haven  | `read_dta()`        | `write_dta()`  |
+| SPSS (`.`) |  Foreign | `read.spss()`        | `write.foreign(... , package="SPSS")`  |
+|            |  Haven | `read_sav()`        | `write_sav()`  |
+| SAS (`.sas`) | Foreign        | `read.csv()`        | `write.foreign(... , package="SAS")`  |
+|              | Haven        | `read_sas()`        | `write_sas()`  |
+| MS Excel (`.xlsx` / `.xls`) | Readxl | `read_excel()`        | *Not available*  |
+|                             | Writexl | *Not available*  | `write_xlsx()` |
 
