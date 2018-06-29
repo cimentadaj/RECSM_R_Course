@@ -24,7 +24,7 @@ bold {font-weight: bold; }
 An introduction to R
 ========================================================
 author: Jorge Cimentada and Basilio Moreno
-date:  23rd of June of 2017
+date:  29th of June of 2018
 class: section
 font-family: 'Helvetica'
 width: 1800
