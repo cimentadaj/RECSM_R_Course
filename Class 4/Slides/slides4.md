@@ -39,21 +39,12 @@ height: 900
 <img src="./figures/rlogo.png" width=500 height=450>
 </div>
 
+
 Learning more about R functions
 ========================================================
 
-Functions are R's black box...
-Take the function `mean` as example.
 
-
-```r
-mean(iris$Sepal.Length)
-```
-
-An introduction to functions
-========================================================
-
-So far we have taken a glimpse to the linear model formula in a previous example.
+So far we have only had a glimpse to the linear model formula in a previous example.
 Here we are going to go a bit deeper on the logic behind the **formula interface** used by some R functions.
 
 * Run one example with the `lm` (Fitting linear models) function and the `mtcars` dataset.
@@ -321,7 +312,7 @@ Despite the vast possibilities of data formats you may find in your work, we hav
 | Basic (`.tsv`) | Built-in function `{utils}` | `read.csv( ... , sep = "\t")`        | `write.csv(... , sep = "\t")`  |
 | STATA (`.dta`) |  Foreign  | `read.dta()`        | `write.dta()`  |
 |                |  Haven  | `read_dta()`        | `write_dta()`  |
-| SPSS (`.`) |  Foreign | `read.spss()`        | `write.foreign(... , package="SPSS")`  |
+| SPSS (`.sav`) |  Foreign | `read.spss()`        | `write.foreign(... , package="SPSS")`  |
 |            |  Haven | `read_sav()`        | `write_sav()`  |
 | SAS (`.sas`) | Foreign        | `read.csv()`        | `write.foreign(... , package="SAS")`  |
 |              | Haven        | `read_sas()`        | `write_sas()`  |
