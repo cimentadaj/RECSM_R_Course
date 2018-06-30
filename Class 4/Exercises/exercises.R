@@ -26,7 +26,7 @@ b <- sqrt(a)	#answer
 # Try to evaluate an object that does not exist in your environment and see what happens.
 j #answer
 
-# Make a logical test asking wheter a is equal to b.
+# Make a logical test asking whether a is equal to b.
 a == b #answer
 
 # What would you have to do to test the opposite? Is a different than b?
@@ -45,11 +45,11 @@ help.start()
 
 # More targeted help
 ?sqrt			# get specific help for a function
-??sqrt			# looking for help pertaining to sqrt
+??sqrt			# looking for help beyond functions
 
 apropos("sq")		# it's on the tip of my tongue...
 
-rm(a)			# remove a single object
+rm(a)			# remove a single object from the environment
 rm(list=ls())		# remove ... remember?
 
 # -------------------------
@@ -63,7 +63,7 @@ a <- c(1,3,5)		#answer
 a[2] #answer
 
 # What about asking how long the vector is? Use the function length()
-
+length(a) #answer
 
 # Any, all, and which (with vectors)
 # See how these functions allow us to create logical tests from vectors.
@@ -79,10 +79,10 @@ which(a>2)	# which indices are TRUE?
 # From what you saw, what do you think would be the result of `any(a>5)`?
 FALSE #answer
 
-# Create a matrix the "formal" way... With the `matrix()` function.
+# Create a matrix `m` with 25 values, dim(5, 5) with the `matrix()` function.
 # Hint: In RStudio, use tab within the brackets of a function to see 
 # which arguments it is waiting for.
-m <- matrix()
+m <- matrix(data=1:25, nrow=5, ncol=5) #answer
 
 # Select an element (specifying two dimensions)
 m[1,2] #answer
@@ -93,27 +93,31 @@ m[1,] #answer
 # just the second column
 m[,2] #answer
 
-# Select a submatrix (a matrix within the values of a)
+# Select a submatrix (a matrix within the values of `m`)
 m[2:3,3:5] #answer
 
 m[-2,]		# nice trick: negative numbers omit cells!
 
-# Get rid of row four and column two
+# Get rid of row four and column two.
 m[-4,-2] #answer
 
 # What are the dimensions of that martix?
 dim(m)
-nrow(m)		# how many rows in b?
-ncol(m)		# how many columns in b?
+# how many rows in m? ?nrow
+nrow(m) #answer
+# how many columns in m? ?ncol
+ncol(m) #answer
 
-#Here we have a new with 5 numeric elements
-l <- (1:5)
+# Save a new vector `l` with 5 numeric elements.
+l <- (1:5) #answer
 
 # Since its length equals that of the two dimensions of the matrix m, we can
 # add them together! It is possible to add columns and rows to an existing matrix.
 # Run and check output of the code below:
 cbind(m,l)
-rbind(m,l)
+
+# Can you add `l` to `m`as a new row? (Hint, ?rbind)
+rbind(m,l) #answer
 
 # Can you add a vector of even numbers as a new column to the matrix `m`?
 even <- (c(2, 4, 6, 8, 10)) ; cbind(m,even) #answer
@@ -127,9 +131,9 @@ a <- 1:5		# create a vector
 a + 1		# addition
 a * 2		# multiplication
 a / 3		# division
-a - 4		# subtraction
+a - 4		# substraction
 a ^ 5		# you get the idea...
-a + a		# also works on pairs of vectors
+a + a		# This also works on pairs of vectors!
 a * a
 a + 1:6		# problem: need same length
 
@@ -159,10 +163,10 @@ a != b	# corresponding values not equivalent?
 # (Hint:don't forget the colon operator and concatenate.)
 d <- data.frame(income=1:5,foreign=c(T,T,T,T,F),name=LETTERS[1:5]) #answer
 
-#Check that your new object is indeed a data.frame
+#Check that your new object is indeed a data.frame. What is its class?
 class(d) #answer
 
-# Print now the vector corresponding to the `foreign` variable
+# Print now the vector corresponding to the `foreign` variable within d
 d$name #answer
 
 # As you can see, this vector contains a factor variable.
@@ -188,7 +192,7 @@ pctg(a) #answer
 
 # We can use functions within  functions too! 
 # It is a pretty common practice when coding in R.
-# Try to print the sum of all the percentage values of a —they should
+# Try to print the sum of all the percentage values of `a` --they should
 # add to 100 if everything worked so far!
 sum(pctg(a)) #answer
 
@@ -210,7 +214,7 @@ setwd("my_computer/example/example_path_file")
 # Set the working directory to one level higher in your system.
 # To get the file path, you can get the current working directory as we just learnt to do and
 # then remove the last indicatio (after the last /)
-
+setwd("my_computer/example/") #answer
 
 #What is available here?
 list.files()
@@ -254,7 +258,7 @@ class(USArrests) #answer
 USA <- USArrests #answer
 
 # How many dimensions does it have?
-dim(USA)
+dim(USA) #answer
 
 # Could you show only the data referred to states with a Urban Population higher than 80(%)?
 USA[USA$UrbanPop > 80, ] #answer
@@ -265,12 +269,14 @@ USA[USA$UrbanPop > mean(USA$UrbanPop), ] #answer
 # ------------------------
 # Elementary visualization
 
-# R's graphics workhorse is the "plot" command, with two arguments:
-plot(x=USA$Murder,y=USA$UrbanPop)
+# R's graphics workhorse is the "plot" command. 
+# Use plot() with two arguments: Murder & UrbanPop from the USA data frame.
+plot(x=USA$Murder,y=USA$UrbanPop) #answer
 
 # Adding plot title and clean up axis labels
 # Search for the two dimensions of the plot and name each axis accordingly.
-plot(x=USA$Murder,y=USA$Assault,xlab="Axis name",ylab="Axis name",main="USArrests")
+# Go back to the help documentation of ?plot to get the instructions!
+plot(x=USA$Murder,y=USA$Assault,xlab="Murder",ylab="Assault",main="USArrests") #answer
 
 # You can also add text to a plot:
 # Step 1: set up a "blank" plot window
@@ -327,7 +333,7 @@ lm(d$X ~ d$y)
 
 # As we have seen, the results from a statistical model are stored in a special type of data.
 # Can you assign that to an object called my_lm?
-my_lm <- lm(d$X ~ d$y)
+my_lm <- lm(d$X ~ d$y) #answer
 
 # Try now to plot the residual error from the model (subsetting the object you've just created) in a histogram
 hist(my_lm$residuals)
@@ -335,11 +341,14 @@ hist(my_lm$residuals)
 #Automatic way of generating plots for a linear model and its fit.
 plot(my_lm)
 
-#Plotting the two variables involved and the expected values.
-plot(d$X, d$y)
+#Plot the two variables involved...
+plot(d$X, d$y) #answer
+
+# and you can add the expected values using the abline() functions.
 abline(my_lm)
 
 # Great! You have completed this introduction course to R!
 # There are a lot of resources available to learn more about R.
-# If you have time now, why don't you try to load the package `swirl`
+# If you have time now, why don't you try to load the package `swirl`.
 # that you installed before?
+# It is a package aimed at learning R from R.

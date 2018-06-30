@@ -18,7 +18,7 @@
 # Hint: Capitalisation DOES matter.
 
 
-# Use the square root function (sqrt())  over a
+# Use the square root function (sqrt())  over `a`
 
 # Use the function again and assign the result to object b
 
@@ -26,7 +26,7 @@
 # Try to evaluate an object that does not exist in your environment and see what happens.
 
 
-# Make a logical test asking wheter a is equal to b.
+# Make a logical test asking whether a is equal to b.
 
 
 # What would you have to do to test the opposite? Is a different than b?
@@ -45,11 +45,11 @@ help.start()
 
 # More targeted help
 ?sqrt			# get specific help for a function
-??sqrt			# looking for help pertaining to sqrt
+??sqrt			# looking for help beyond functions
 
 apropos("sq")		# it's on the tip of my tongue...
 
-rm(a)			# remove a single object
+rm(a)			# remove a single object from the environment
 rm(list=ls())		# remove ... remember?
 
 # -------------------------
@@ -79,41 +79,43 @@ which(a>2)	# which indices are TRUE?
 # From what you saw, what do you think would be the result of `any(a>5)`?
 
 
-# Create a matrix the "formal" way... With the `matrix()` function.
+# Create a matrix `m` with 25 values, dim(5, 5) with the `matrix()` function.
 # Hint: In RStudio, use tab within the brackets of a function to see 
 # which arguments it is waiting for.
-m <- matrix()
+
 
 # Select an element (specifying two dimensions)
-m[1,2] #answer
+
 
 # just the first row
-m[1,] #answer
+
 
 # just the second column
-m[,2] #answer
 
-# Select a submatrix (a matrix within the values of a)
-m[2:3,3:5] #answer
+
+# Select a submatrix (a matrix within the values of `m`)
+
 
 m[-2,]		# nice trick: negative numbers omit cells!
 
-# Get rid of row four and column two
-m[-4,-2] #answer
+# Get rid of row four and column two.
+
 
 # What are the dimensions of that martix?
 dim(m)
-nrow(m)		# how many rows in b?
-ncol(m)		# how many columns in b?
+# how many rows in m?
 
-#Here we have a new with 5 numeric elements
-l <- (1:5)
+# how many columns in m?
+
+# Save a new vector `l` with 5 numeric elements.
+
 
 # Since its length equals that of the two dimensions of the matrix m, we can
 # add them together! It is possible to add columns and rows to an existing matrix.
 #Check the code below:
 cbind(m,l)
-rbind(m,l)
+
+# Can you add `l` to `m`as a new row? (Hint, ?rbind)
 
 # -----------------------
 # Element-wise operations (Some new information)
@@ -124,9 +126,9 @@ a <- 1:5		# create a vector
 a + 1		# addition
 a * 2		# multiplication
 a / 3		# division
-a - 4		# subtraction
+a - 4		# substraction
 a ^ 5		# you get the idea...
-a + a		# also works on pairs of vectors
+a + a		# This also works on pairs of vectors!
 a * a
 a + 1:6		# problem: need same length
 
@@ -156,10 +158,10 @@ a != b	# corresponding values not equivalent?
 # (Hint:don't forget the colon operator and concatenate.)
 
 
-#Check that your new object is indeed a data.frame
+#Check that your new object is indeed a data.frame. What is its class?
 
 
-# Print now the vector corresponding to the `foreign` variable
+# Print now the vector corresponding to the `foreign` variable within d
 
 
 # As you can see, this vector contains a factor variable.
@@ -184,8 +186,8 @@ function(x) {
 
 # We can use functions within  functions too! 
 # It is a pretty common practice when coding in R.
-# Try to print the sum of all the percentage values of a —they should
-# add to 100 if everything worked so far!
+# Try to print the sum of all the percentage values of  `a` --they
+# should add to 100 if everything worked so far!
 
 
 ##########################################################################################
@@ -260,12 +262,13 @@ USArrests			# view the object
 # ------------------------
 # Elementary visualization
 
-# R's graphics workhorse is the "plot" command, with two arguments:
-plot(x=USA$Murder,y=USA$UrbanPop)
+# R's graphics workhorse is the "plot" command. 
+# Use plot() with two arguments: Murder & UrbanPop from the USA data frame.
+
 
 # Adding plot title and clean up axis labels
 # Search for the two dimensions of the plot and name each axis accordingly.
-plot(x=USA$Murder,y=USA$Assault,xlab="Axis name",ylab="Axis name",main="USArrests")
+
 
 # You can also add text to a plot:
 # Step 1: set up a "blank" plot window
@@ -328,11 +331,14 @@ hist(my_lm$residuals)
 #Automatic way of generating plots for a linear model and its fit.
 plot(my_lm)
 
-#Plotting the two variables involved and the expected values.
-plot(d$X, d$y)
+#Plot the two variables involved...
+
+
+# and you can add the expected values using the abline() functions.
 abline(my_lm)
 
 # Great! You have completed this introduction course to R!
 # There are a lot of resources available to learn more about R.
 # If you have time now, why don't you try to load the package `swirl`
 # that you installed before?
+# It is a package aimed at learning R from R.

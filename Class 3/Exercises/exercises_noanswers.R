@@ -38,8 +38,3 @@ for (column in mtcars) {
 }
 
 # Turn the above code to work for the 'iris' dataset. 
-
-# Things to do:
-# Change dataset to iris
-# if the column was not a numeric, print() a table() with
-# the column inside
