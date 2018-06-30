@@ -24,7 +24,7 @@ bold {font-weight: bold; }
 An introduction to R
 ========================================================
 author: Jorge Cimentada and Basilio Moreno
-date:  23rd of June of 2017
+date:  28th of June 2018
 class: section
 font-family: 'Helvetica'
 width: 1800
@@ -39,7 +39,7 @@ How to install R?
 
 Luckily, you guys have R and Rstudio installed, so you don't have to worry about this!
 
-But if you want to install it at home, please follow [this guide](https://github.com/cimentadaj/Rseminars/tree/master/Lesson_1#installing-r)
+But if you want to install it at home, please follow [this guide](https://github.com/cimentadaj/Rseminars/blob/master/RonR_Second_Seminar/README.md)
 
 That guide can help you install
 
