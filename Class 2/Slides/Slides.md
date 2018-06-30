@@ -24,7 +24,7 @@ bold {font-weight: bold; }
 An introduction to R
 ========================================================
 author: Jorge Cimentada and Basilio Moreno
-date:  29th of June of 2018
+date:  28th of June 2018
 class: section
 font-family: 'Helvetica'
 width: 1800
@@ -586,7 +586,7 @@ sd
 function (x, na.rm = FALSE) 
 sqrt(var(if (is.vector(x) || is.factor(x)) x else as.double(x), 
     na.rm = na.rm))
-<bytecode: 0x7f84afccea78>
+<bytecode: 0x000000001a9f2f98>
 <environment: namespace:stats>
 ```
 
