@@ -39,7 +39,7 @@ How to install R?
 
 Luckily, you guys have R and Rstudio installed, so you don't have to worry about this!
 
-But if you want to install it at home, please follow [this guide](https://github.com/cimentadaj/Rseminars/blob/master/RonR_Second_Seminar/README.md)
+But if you want to install it at home, please follow [this guide](https://github.com/cimentadaj/Rseminars/blob/master/Lesson_1/README.md)
 
 That guide can help you install
 
