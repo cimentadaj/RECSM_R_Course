@@ -4,6 +4,6 @@
 
 -Packages
 -How to get help?
-- Create a copy of “Exercises.R” and remove all answers
 
 Q for Jorge: What do you mean on line 451 of the presentation? Matrices have the same number of dimensions than df's?
+I mean that hey have rows and columns as well: 2-dimensional matrices

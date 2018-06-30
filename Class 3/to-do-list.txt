@@ -1,3 +1,2 @@
 To-do list:
-
-- Cómo instalar paquetes // Ya está resuelto esto, ¿no?
+// After the course: Add references to the str() function for exploring data.

@@ -24,7 +24,7 @@ bold {font-weight: bold; }
 An introduction to R
 ========================================================
 author: Jorge Cimentada and Basilio Moreno
-date:  23rd of June of 2017
+date:  28th of June of 2018
 class: section
 font-family: 'Helvetica'
 width: 1800
@@ -455,6 +455,24 @@ Here we have some more info provided by the help documents.
 ```
 
 Read a bit, and then check the examples!
+
+A primer of loops
+========================================================
+
+How do we repeat things?
+
+
+```r
+for (column in mtcars) {
+  if (is.numeric(column)) {
+    print(is.numeric(column))
+  } else {
+    message("Not numeric")
+  }
+}
+```
+
+Let's explain it in the console...
 
 An introduction to functions
 ========================================================
