@@ -1,15 +1,15 @@
 # Global to-do list del curso:
 
-- [ ] **Revisar que el swirl course está completo, no tiene faltas y corre correctamente.**
+- [x] **Revisar que el swirl course está completo, no tiene faltas y corre correctamente.**
    - [x] Eliminar la palabra EDA por Explorartory Data Analisis en el curso..
    - [x] Revisar que los links funcionen correctamente de RonR.
 - [ ] **Update el swirl con el nuevo contenido? (extra).**
+
 - [x] ~~**Revisar que todos los links de las instalaciones/referencias de todo funcionen correctamente.**~~
+
 - [x] ~~**Revisar las todo lists del año pasado.**~~
-   - [x] Class 1.
-   - [x] Class 2.
-   - [x] Class 3. Introduce the str() function to check the structure of a data frame.
-   - [x] Class 4: Add slides talking about standard models as well.
+   - [ ] Class 3. Introduce the str() function to check the structure of a data frame.
+   
 - [x] ~~**Incorporar contenidos solicitados por otros profesores de la summer school:**~~
    - [x] 1. Data types
    - [x] 2. Subsetting
