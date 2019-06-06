@@ -1,6 +1,6 @@
 ###############
 # Author: Jorge Cimentada & Basilio Moreno
-# Time: Wed Jun  22 22:07:50 2017
+# Time: Thu Jun  6 18:44:18 2019
 # Project: Exercises Class_4
 ###############
 
@@ -315,7 +315,7 @@ d$y <- d$alpha + d$beta * d$X + rnorm(I, mean=0, sd=sigma)
 
 head(d, n=12)
 
-# What kind of objects are I and d, just created?
+# What kind of objects are `I` and `d`, just created?
 class(I) ; class(d) #answer
 
 # How many dimensions do they have?
