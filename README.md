@@ -14,4 +14,3 @@ Link to the slides of the four classes:
 - [Slides 2st class](./class_2/Slides/slides.html)
 - [Slides 3st class](./class_3/Slides/slides.html)
 - [Slides 4st class](./class_4/Slides/slides.html)
-- [RECSM Summer School](https://www.upf.edu/web/survey/summer-school-2019)
