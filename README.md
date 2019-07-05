@@ -11,6 +11,14 @@ Because many of the seminars at the RECSM summer school will be conducted in R, 
 Link to the slides of the four classes:
 
 - [Slides 1st class](./class_1/Slides/slides.html)
+  - [Exercises](./class_1/exercises/exercises_noanswers.R)
+  - [Exercise answers](./class_1/exercises/exercises_answers.R)
 - [Slides 2st class](./class_2/Slides/slides.html)
+  - [Exercises](./class_2/exercises/exercises_noanswers.R)
+  - [Exercise answers](./class_2/exercises/exercises_answers.R)
 - [Slides 3st class](./class_3/Slides/slides.html)
+  - [Exercises](./class_3/exercises/exercises_noanswers.R)
+  - [Exercise answers](./class_3/exercises/exercises_answers.R)
 - [Slides 4st class](./class_4/Slides/slides.html)
+  - [Exercises](./class_4/exercises/exercises_noanswers.R)
+  - [Exercise answers](./class_4/exercises/exercises_answers.R)
