@@ -10,8 +10,8 @@ Because many of the seminars at the RECSM summer school will be conducted in R, 
 
 Link to the slides of the four classes:
 
-[Slides 1st class](Class 1/Slides/slides.html)
-[Slides 2st class](Class 2/Slides/slides.html)
-[Slides 3st class](Class 3/Slides/slides.html)
-[Slides 4st class](Class 4/Slides/slides.html)
-[RECSM Summer School](https://www.upf.edu/web/survey/summer-school-2019)
+- [Slides 1st class](Class 1/Slides/slides.html)
+- [Slides 2st class](Class 2/Slides/slides.html)
+- [Slides 3st class](Class 3/Slides/slides.html)
+- [Slides 4st class](Class 4/Slides/slides.html)
+- [RECSM Summer School](https://www.upf.edu/web/survey/summer-school-2019)
