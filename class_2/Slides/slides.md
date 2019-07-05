@@ -24,7 +24,7 @@ bold {font-weight: bold; }
 An introduction to R
 ========================================================
 author: Jorge Cimentada and Basilio Moreno
-date:  28th of June 2018
+date:  6th of July 2019
 class: section
 font-family: 'Helvetica'
 width: 1800
@@ -50,7 +50,7 @@ x
 ```
 
 ```
- [1] 10  2  9  4  5  8  3  1  7  6
+ [1]  8  3  1  4  6  7  5  9 10  2
 ```
 
 We have 10 random numbers.
@@ -60,7 +60,7 @@ Their positions are:
 
 ```
  1  2  3  4  5  6  7  8  9 10 
-10  2  9  4  5  8  3  1  7  6 
+ 8  3  1  4  6  7  5  9 10  2 
 ```
 
 Subsetting in R
@@ -69,7 +69,7 @@ Subsetting in R
 If `x` is:
 
 ```
- [1] 10  2  9  4  5  8  3  1  7  6
+ [1]  8  3  1  4  6  7  5  9 10  2
 ```
 
 what is the result of:
@@ -217,16 +217,16 @@ our_df
 
 ```
    letters age   lgl
-1        a  45 FALSE
-2        b  31 FALSE
-3        c  41  TRUE
-4        d  29 FALSE
-5        e  46  TRUE
-6        f  44  TRUE
-7        g  27 FALSE
-8        h  28  TRUE
-9        i  42  TRUE
-10       j  39 FALSE
+1        a  25 FALSE
+2        b  27 FALSE
+3        c  34 FALSE
+4        d  39 FALSE
+5        e  40  TRUE
+6        f  45 FALSE
+7        g  35 FALSE
+8        h  43  TRUE
+9        i  28 FALSE
+10       j  48  TRUE
 ```
 
 * But if we remember correctly we can have different variables in a data frame.
@@ -284,7 +284,7 @@ Following the 'list' subsetting rules for data frames:
 The result should be:
 
 ```
-[1] 41 29 42
+[1] 34 39 28
 ```
 
 Subsetting in R
@@ -450,7 +450,7 @@ our_df$age < 40
 ```
 
 ```
- [1] FALSE  TRUE FALSE  TRUE FALSE FALSE  TRUE  TRUE FALSE  TRUE
+ [1]  TRUE  TRUE  TRUE  TRUE FALSE FALSE  TRUE FALSE  TRUE FALSE
 ```
 
 * Only positions `c(2, 4, 7, 8, 10)` comply with the logical statement.
@@ -467,11 +467,11 @@ our_df[c(2, 4, 7, 8, 10), ]
 
 ```
    letters age   lgl           our_variable lgl_two add
-2        b  31 FALSE this repeats until end   FALSE  31
-4        d  29 FALSE this repeats until end   FALSE  29
-7        g  27 FALSE this repeats until end   FALSE  27
-8        h  28  TRUE this repeats until end   FALSE  29
-10       j  39 FALSE this repeats until end    TRUE  39
+2        b  27 FALSE this repeats until end   FALSE  27
+4        d  39 FALSE this repeats until end    TRUE  39
+7        g  35 FALSE this repeats until end    TRUE  35
+8        h  43  TRUE this repeats until end    TRUE  44
+10       j  48  TRUE this repeats until end    TRUE  49
 ```
 
 * However, this is too problematic. What if we had 2,000 rows?
@@ -482,12 +482,13 @@ our_df[our_df$age < 40, ]
 ```
 
 ```
-   letters age   lgl           our_variable lgl_two add
-2        b  31 FALSE this repeats until end   FALSE  31
-4        d  29 FALSE this repeats until end   FALSE  29
-7        g  27 FALSE this repeats until end   FALSE  27
-8        h  28  TRUE this repeats until end   FALSE  29
-10       j  39 FALSE this repeats until end    TRUE  39
+  letters age   lgl           our_variable lgl_two add
+1       a  25 FALSE this repeats until end   FALSE  25
+2       b  27 FALSE this repeats until end   FALSE  27
+3       c  34 FALSE this repeats until end   FALSE  34
+4       d  39 FALSE this repeats until end    TRUE  39
+7       g  35 FALSE this repeats until end    TRUE  35
+9       i  28 FALSE this repeats until end   FALSE  28
 ```
 
 * Much better!
@@ -511,7 +512,7 @@ gender == "female" # is a logical statement
 ```
 
 ```
- [1] FALSE  TRUE  TRUE  TRUE FALSE FALSE  TRUE  TRUE  TRUE FALSE
+ [1] FALSE FALSE FALSE FALSE  TRUE FALSE  TRUE FALSE  TRUE  TRUE
 ```
 
 We could've written:
@@ -522,7 +523,7 @@ gender[c(FALSE, TRUE, TRUE, TRUE, FALSE, FALSE, TRUE, TRUE, TRUE, FALSE)]
 ```
 
 ```
-[1] female female female female female female
+[1] male   male   male   female male   female
 Levels: female male
 ```
 
@@ -575,7 +576,7 @@ x
 ```
 
 ```
- [1] 10  2  9  4  5  8  3  1  7  6
+ [1]  8  3  1  4  6  7  5  9 10  2
 ```
 
 ```r
@@ -586,7 +587,7 @@ sd
 function (x, na.rm = FALSE) 
 sqrt(var(if (is.vector(x) || is.factor(x)) x else as.double(x), 
     na.rm = na.rm))
-<bytecode: 0x000000001a9f3288>
+<bytecode: 0x562320e18230>
 <environment: namespace:stats>
 ```
 
@@ -627,7 +628,7 @@ cor(x, y, method = "spearman")
 ```
 
 ```
-[1] 0.73967
+[1] 0.7328173
 ```
 
 

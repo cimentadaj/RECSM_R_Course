@@ -1,8 +1,3 @@
----
-output:
-  html_document: default
-  pdf_document: default
----
 <style>
 bold {font-weight: bold; }
 
