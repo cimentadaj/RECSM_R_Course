@@ -1,2 +1,0 @@
-To-do list:
-// After the course: Add references to the str() function for exploring data.
