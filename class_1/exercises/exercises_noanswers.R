@@ -21,7 +21,8 @@
 vec <- "1":"100"
 # Why?
 
-# What is the class of this vector?x <- c(seq(1, 100, by = 2), "100")
+# Run the following vector and answer, what is its class? Why do you think so?
+x <- c(seq(1, 100, by = 2), "100")
 
 # How can we coerce it to the class we want (numeric)?
 
@@ -50,4 +51,6 @@ c(T, T) + c(5, 10) + c(0, 0)
 # and inside include matrix_letters and then matrix_numbers separated by a comma.
 
 # What is the problem with this data set?
-# That's why we use data frames!# Copy the code from above and replace cbind() by data.frame()
+# That's why we use data frames!
+# Copy the code from above and fill it with the data.frame() example below
+data.frame( , )
