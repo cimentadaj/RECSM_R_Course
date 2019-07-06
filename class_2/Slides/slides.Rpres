@@ -121,7 +121,7 @@ Let's go through each one...
 Subsetting in R
 ========================================================
 incremental: true
-If you remember correctly, matrices are a vector with rows rows and columns.
+If you remember correctly, matrices are a vector with rows and columns.
 
 ```{r}
 x_matrix <- matrix(1:10, 5, 2) # 5 rows and 2 columns
