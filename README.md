@@ -10,15 +10,16 @@ Because many of the seminars at the RECSM summer school will be conducted in R, 
 
 Link to the slides of the four classes:
 
-- [Slides 1st class](./class_1/Slides/slides.html)
-  - [Exercises](./class_1/exercises/exercises_noanswers.R)
+- [Slides 1st class](./class_1/Slides/slides.html)([pdf](./class_1/Slides/slides_1.pdf))  - [Exercises](./class_1/exercises/exercises_noanswers.R)
   - [Exercise answers](./class_1/exercises/exercises_answers.R)
-- [Slides 2nd class](./class_2/Slides/slides.html)
+- [Slides 2nd class](./class_2/Slides/slides.html)([pdf](./class_2/Slides/slides_2.pdf))
   - [Exercises](./class_2/exercises/exercises_noanswers.R)
   - [Exercise answers](./class_2/exercises/exercises_answers.R)
-- [Slides 3rd class](./class_3/Slides/slides.html)
+- [Slides 3rd class](./class_3/Slides/slides.html)([pdf](./class_3/Slides/slides_3.pdf))
   - [Exercises](./class_3/exercises/exercises_noanswers.R)
   - [Exercise answers](./class_3/exercises/exercises_answers.R)
-- [Slides 4th class](./class_4/Slides/slides.html)
+- [Slides 4th class](./class_4/Slides/slides.html)([pdf](./class_3/Slides/slides_3.pdf))
   - [Exercises](./class_4/exercises/exercises_noanswers.R)
   - [Exercise answers](./class_4/exercises/exercises_answers.R)
+
+** The first slides in PDF documents had a rendering problem in the first slide but all other slides should be fine.
