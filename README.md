@@ -19,7 +19,7 @@ Link to the slides of the four classes:
 - [Slides 3rd class](./class_3/Slides/slides.html)([pdf](./class_3/Slides/slides_3.pdf))
   - [Exercises](./class_3/exercises/exercises_noanswers.R)
   - [Exercise answers](./class_3/exercises/exercises_answers.R)
-- [Slides 4th class](./class_4/Slides/slides.html)([pdf](./class_3/Slides/slides_3.pdf))
+- [Slides 4th class](./class_4/Slides/slides.html)([pdf](./class_4/Slides/slides_4.pdf))
   - [Exercises](./class_4/exercises/exercises_noanswers.R)
   - [Exercise answers](./class_4/exercises/exercises_answers.R)
 
